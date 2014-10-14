@@ -5,7 +5,7 @@ interface RouteGenerator
     /**
      * Get route domain.
      *
-     * @param  boolean  $forceBase
+     * @param  bool   $forceBase
      * @return string
      */
     public function domain($forceBase = false);
@@ -14,7 +14,7 @@ interface RouteGenerator
      * Determine if the current request URI matches a pattern.
      *
      * @param  string  $pattern
-     * @return boolean
+     * @return bool
      */
     public function is($pattern);
 
@@ -28,7 +28,7 @@ interface RouteGenerator
     /**
      * Get route prefix.
      *
-     * @param  boolean  $forceBase
+     * @param  bool   $forceBase
      * @return string
      */
     public function prefix($forceBase = false);

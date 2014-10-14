@@ -5,7 +5,7 @@ interface SafeMode
     /**
      * Determine whether current request is in safe mode or not.
      *
-     * @return boolean
+     * @return bool
      */
     public function check();
 }

@@ -6,14 +6,14 @@ interface Finder
      * Add a new path to finder.
      *
      * @param  string   $path
-     * @return Finder
+     * @return static
      */
     public function addPath($path);
 
     /**
      * Detect available extensions.
      *
-     * @return array
+     * @return \Illuminate\Support\Collection|array
      */
     public function detect();
 
