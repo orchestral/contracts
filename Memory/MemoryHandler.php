@@ -1,8 +1,6 @@
-<?php namespace Orchestra\Contracts\Memory\MemoryHandler;
+<?php namespace Orchestra\Contracts\Memory;
 
-use Orchestra\Contracts\Support\DataContainer;
-
-interface MemoryHandler extends DataContainer
+interface MemoryHandler
 {
     /**
      * Initialize method.
