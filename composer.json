@@ -15,9 +15,7 @@
         }
     },
     "require": {
-        "php": ">=5.4.0",
-        "illuminate/contracts": "5.0.*",
-        "orchestra/support-core": "3.0.*"
+        "php": ">=5.4.0"
     },
     "extra": {
         "branch-alias": {
