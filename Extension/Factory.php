@@ -6,7 +6,7 @@ interface Factory
      * Activate an extension.
      *
      * @param  string   $name
-     * @return boolean
+     * @return bool
      */
     public function activate($name);
 
@@ -14,7 +14,7 @@ interface Factory
      * Check whether an extension is active.
      *
      * @param  string   $name
-     * @return boolean
+     * @return bool
      */
     public function activated($name);
 
@@ -22,14 +22,14 @@ interface Factory
      * Check whether an extension is available.
      *
      * @param  string   $name
-     * @return boolean
+     * @return bool
      */
     public function available($name);
 
     /**
      * Boot active extensions.
      *
-     * @return \Orchestra\Extension\Factory
+     * @return $this
      */
     public function boot();
 
@@ -58,7 +58,7 @@ interface Factory
     /**
      * Shutdown all extensions.
      *
-     * @return static
+     * @return $this
      */
     public function finish();
 

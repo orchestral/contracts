@@ -6,7 +6,7 @@ interface Finder
      * Add a new path to finder.
      *
      * @param  string   $path
-     * @return static
+     * @return $this
      */
     public function addPath($path);
 
