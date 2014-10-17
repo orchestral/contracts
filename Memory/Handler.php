@@ -1,6 +1,6 @@
 <?php namespace Orchestra\Contracts\Memory;
 
-interface MemoryHandler
+interface Handler
 {
     /**
      * Initialize method.
