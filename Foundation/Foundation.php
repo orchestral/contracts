@@ -1,8 +1,9 @@
 <?php namespace Orchestra\Contracts\Foundation;
 
 use Closure;
+use Orchestra\Contracts\Http\RouteManager;
 
-interface Foundation
+interface Foundation extends RouteManager
 {
     /**
      * Start the application.
