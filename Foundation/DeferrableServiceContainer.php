@@ -1,4 +1,4 @@
-<?php namespace Orchestra\Contracts\Kernel;
+<?php namespace Orchestra\Contracts\Foundation;
 
 interface DeferrableServiceContainer
 {
