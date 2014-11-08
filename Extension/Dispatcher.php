@@ -25,7 +25,7 @@ interface Dispatcher
      * @param  array    $options
      * @return void
      */
-    public function start($name, $options);
+    public function start($name, array $options);
 
     /**
      * Shutdown an extension.
@@ -34,5 +34,5 @@ interface Dispatcher
      * @param  array    $options
      * @return void
      */
-    public function finish($name, $options);
+    public function finish($name, array $options);
 }
