@@ -5,7 +5,7 @@ interface RouteGenerator
     /**
      * Get route domain.
      *
-     * @param  bool   $forceBase
+     * @param  bool  $forceBase
      * @return string
      */
     public function domain($forceBase = false);
@@ -28,7 +28,7 @@ interface RouteGenerator
     /**
      * Get route prefix.
      *
-     * @param  bool   $forceBase
+     * @param  bool  $forceBase
      * @return string
      */
     public function prefix($forceBase = false);
@@ -43,7 +43,7 @@ interface RouteGenerator
     /**
      * Get route to.
      *
-     * @param  string   $to
+     * @param  string  $to
      * @return string
      */
     public function to($to);

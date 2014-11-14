@@ -5,10 +5,10 @@ interface Field
     /**
      * Get value of column.
      *
-     * @param  mixed   $row
-     * @param  mixed   $control
-     * @param  array   $attributes
+     * @param  mixed  $row
+     * @param  mixed  $control
+     * @param  array  $templates
      * @return string
      */
-    public function getField($row, $control, array $attributes = []);
+    public function getField($row, $control, array $templates = []);
 }

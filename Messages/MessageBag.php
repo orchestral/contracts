@@ -8,7 +8,7 @@ interface MessageBag extends MessageBagContract
     /**
      * Extend Messages instance from session.
      *
-     * @param  \Closure $callback
+     * @param  \Closure  $callback
      * @return static
      */
     public function extend(Closure $callback);
@@ -31,7 +31,7 @@ interface MessageBag extends MessageBagContract
     /**
      * Compile the instance into serialize.
      *
-     * @return string   serialize of this instance
+     * @return string  serialize of this instance
      */
     public function serialize();
 }

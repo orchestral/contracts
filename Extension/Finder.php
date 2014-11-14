@@ -5,7 +5,7 @@ interface Finder
     /**
      * Add a new path to finder.
      *
-     * @param  string   $path
+     * @param  string  $path
      * @return $this
      */
     public function addPath($path);
@@ -20,8 +20,8 @@ interface Finder
     /**
      * Register the extension.
      *
-     * @param  string   $name
-     * @param  string   $path
+     * @param  string  $name
+     * @param  string  $path
      * @return bool
      */
     public function registerExtension($name, $path);

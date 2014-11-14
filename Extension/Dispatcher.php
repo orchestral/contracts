@@ -5,8 +5,8 @@ interface Dispatcher
     /**
      * Register the extension.
      *
-     * @param  string   $name
-     * @param  array    $options
+     * @param  string  $name
+     * @param  array   $options
      * @return void
      */
     public function register($name, array $options);
@@ -21,8 +21,8 @@ interface Dispatcher
     /**
      * Start the extension.
      *
-     * @param  string   $name
-     * @param  array    $options
+     * @param  string  $name
+     * @param  array   $options
      * @return void
      */
     public function start($name, array $options);
@@ -30,8 +30,8 @@ interface Dispatcher
     /**
      * Shutdown an extension.
      *
-     * @param  string   $name
-     * @param  array    $options
+     * @param  string  $name
+     * @param  array   $options
      * @return void
      */
     public function finish($name, array $options);

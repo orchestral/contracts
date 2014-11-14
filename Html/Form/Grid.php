@@ -22,7 +22,7 @@ interface Grid extends GridContract
     /**
      * Attach rows data instead of assigning a model.
      *
-     * @param  array    $row
+     * @param  array  $row
      * @return mixed
      * @see    static::with()
      */
@@ -31,17 +31,17 @@ interface Grid extends GridContract
     /**
      * Create a new Fieldset instance.
      *
-     * @param  string   $name
-     * @param  \Closure $callback
-     * @return \Orchestra\Contracts\Form\Fieldset
+     * @param  string  $name
+     * @param  \Closure  $callback
+     * @return \Orchestra\Contracts\Html\Form\Fieldset
      */
     public function fieldset($name, Closure $callback = null);
 
     /**
      * Add hidden field.
      *
-     * @param  string   $name
-     * @param  \Closure $callback
+     * @param  string  $name
+     * @param  \Closure  $callback
      * @return void
      */
     public function hidden($name, $callback = null);
@@ -49,10 +49,10 @@ interface Grid extends GridContract
     /**
      * Setup form configuration.
      *
-     * @param  \Orchestra\Contracts\Html\Form\Presenter   $listener
-     * @param  string   $url
-     * @param  \Illuminate\Database\Eloquent\Model   $model
-     * @param  array   $attributes
+     * @param  \Orchestra\Contracts\Html\Form\Presenter  $listener
+     * @param  string  $url
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @param  array  $attributes
      * @return $this
      */
     public function resource(Presenter $listener, $url, Model $model, array $attributes = []);
@@ -60,10 +60,10 @@ interface Grid extends GridContract
     /**
      * Setup simple form configuration.
      *
-     * @param  \Orchestra\Contracts\Html\Form\Presenter   $listener
-     * @param  string   $url
-     * @param  \Illuminate\Database\Eloquent\Model   $model
-     * @param  array   $attributes
+     * @param  \Orchestra\Contracts\Html\Form\Presenter  $listener
+     * @param  string  $url
+     * @param  \Illuminate\Database\Eloquent\Model  $model
+     * @param  array  $attributes
      * @return $this
      */
     public function setup(Presenter $listener, $url, $model, array $attributes = []);

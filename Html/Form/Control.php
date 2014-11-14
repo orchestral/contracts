@@ -31,8 +31,8 @@ interface Control
      * Build field by type.
      *
      * @param  string  $type
-     * @param  mixed   $row
-     * @param  \Illuminate\Support\Fluent   $control
+     * @param  mixed  $row
+     * @param  \Illuminate\Support\Fluent  $control
      * @return \Illuminate\Support\Fluent
      */
     public function buildFieldByType($type, $row, Fluent $control);
@@ -41,8 +41,8 @@ interface Control
      * Build data.
      *
      * @param  string  $type
-     * @param  mixed   $row
-     * @param  \Illuminate\Support\Fluent   $control
+     * @param  mixed  $row
+     * @param  \Illuminate\Support\Fluent  $control
      * @return \Illuminate\Support\Fluent
      */
     public function buildFluentData($type, $row, Fluent $control);

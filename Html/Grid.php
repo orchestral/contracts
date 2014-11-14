@@ -5,8 +5,8 @@ interface Grid
     /**
      * Add or append Grid attributes.
      *
-     * @param  mixed    $key
-     * @param  mixed    $value
+     * @param  mixed  $key
+     * @param  mixed  $value
      * @return array|null
      */
     public function attributes($key = null, $value = null);
@@ -25,7 +25,7 @@ interface Grid
      *      $fieldset->layout('path.to.view');
      * </code>
      *
-     * @param  string   $name
+     * @param  string  $name
      * @return $this
      */
     public function layout($name);
@@ -33,8 +33,8 @@ interface Grid
     /**
      * Allow column overwriting.
      *
-     * @param  string       $name
-     * @param  mixed|null   $callback
+     * @param  string      $name
+     * @param  mixed|null  $callback
      * @return \Illuminate\Support\Fluent
      * @throws \InvalidArgumentException
      * @throws \RuntimeException
@@ -44,7 +44,7 @@ interface Grid
     /**
      * Forget meta value.
      *
-     * @param  string   $key
+     * @param  string  $key
      * @return void
      */
     public function forget($key);
@@ -52,8 +52,8 @@ interface Grid
     /**
      * Get meta value.
      *
-     * @param  string       $key
-     * @param  mixed|null   $default
+     * @param  string  $key
+     * @param  mixed|null  $default
      * @return mixed
      */
     public function get($key, $default = null);
@@ -61,8 +61,8 @@ interface Grid
     /**
      * Set meta value.
      *
-     * @param  string   $key
-     * @param  mixed    $value
+     * @param  string  $key
+     * @param  mixed   $value
      * @return array
      */
     public function set($key, $value);

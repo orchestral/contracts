@@ -15,8 +15,8 @@ interface Grid extends GridContract
      *      $table->with(User::paginate(30), true);
      * </code>
      *
-     * @param  mixed   $model
-     * @param  bool    $paginate
+     * @param  mixed  $model
+     * @param  bool   $paginate
      * @return $this
      * @throws \InvalidArgumentException
      */
@@ -30,7 +30,7 @@ interface Grid extends GridContract
      *      $table->rows(DB::table('users')->get());
      * </code>
      *
-     * @param  array   $rows
+     * @param  array  $rows
      * @return array
      * @throws \InvalidArgumentException
      */
@@ -60,8 +60,8 @@ interface Grid extends GridContract
      *      });
      * </code>
      *
-     * @param  mixed   $name
-     * @param  mixed|null   $callback
+     * @param  mixed  $name
+     * @param  mixed|null  $callback
      * @return \Orchestra\Contracts\Html\Table\Column
      */
     public function column($name, $callback = null);
@@ -69,7 +69,7 @@ interface Grid extends GridContract
     /**
      * Setup pagination.
      *
-     * @param  int|null $perPage
+     * @param  int|null  $perPage
      * @return $this
      */
     public function paginate($perPage);
@@ -93,8 +93,8 @@ interface Grid extends GridContract
     /**
      * Execute sortable query filter on model instance.
      *
-     * @param  string   $orderByKey
-     * @param  string   $directionKey
+     * @param  string  $orderByKey
+     * @param  string  $directionKey
      * @return void
      */
     public function sortable($orderByKey = 'order_by', $directionKey = 'direction');

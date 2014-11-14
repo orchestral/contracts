@@ -19,8 +19,8 @@ interface Installation
     /**
      * Create administrator account.
      *
-     * @param  array    $input
-     * @param  bool     $allowMultiple
+     * @param  array  $input
+     * @param  bool   $allowMultiple
      * @return bool
      */
     public function createAdmin($input, $allowMultiple = true);

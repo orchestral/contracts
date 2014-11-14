@@ -8,7 +8,7 @@ interface Builder extends Renderable
     /**
      * Extend decoration.
      *
-     * @param  \Closure $callback
+     * @param  \Closure  $callback
      * @return $this
      */
     public function extend(Closure $callback = null);

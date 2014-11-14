@@ -22,14 +22,14 @@ interface Foundation extends RouteManager
     /**
      * Get memory services.
      *
-     * @var \Orchestra\Memory\Provider
+     * @var \Orchestra\Contracts\Memory\Provider
      */
     public function memory();
 
     /**
      * Get menu services.
      *
-     * @var \Orchestra\Widget\MenuWidgetHandler
+     * @var \Orchestra\Widget\Handlers\Menu
      */
     public function menu();
 

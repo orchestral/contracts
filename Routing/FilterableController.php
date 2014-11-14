@@ -5,8 +5,8 @@ interface FilterableController
     /**
      * Register a "before" filter on the controller.
      *
-     * @param  \Closure|string $filter
-     * @param  array $options
+     * @param  \Closure|string  $filter
+     * @param  array  $options
      * @return void
      */
     public function beforeFilter($filter, array $options = []);
@@ -14,8 +14,8 @@ interface FilterableController
     /**
      * Register an "after" filter on the controller.
      *
-     * @param  \Closure|string $filter
-     * @param  array $options
+     * @param  \Closure|string  $filter
+     * @param  array  $options
      * @return void
      */
     public function afterFilter($filter, array $options = []);
@@ -23,7 +23,7 @@ interface FilterableController
     /**
      * Remove the given before filter.
      *
-     * @param  string $filter
+     * @param  string  $filter
      * @return void
      */
     public function forgetBeforeFilter($filter);
@@ -31,7 +31,7 @@ interface FilterableController
     /**
      * Remove the given after filter.
      *
-     * @param  string $filter
+     * @param  string  $filter
      * @return void
      */
     public function forgetAfterFilter($filter);

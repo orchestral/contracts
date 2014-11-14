@@ -51,8 +51,8 @@ interface RouteManager
     /**
      * Run the callback when route is matched.
      *
-     * @param  string   $path
-     * @param  mixed    $listener
+     * @param  string  $path
+     * @param  mixed   $listener
      * @return void
      */
     public function when($path, $listener);
