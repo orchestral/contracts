@@ -5,24 +5,24 @@ use Illuminate\Support\Fluent;
 interface Control
 {
     /**
-     * Get template.
+     * Get templates.
      *
      * @return array
      */
-    public function getTemplate();
+    public function getTemplates();
 
     /**
-     * Set template.
+     * Set templates.
      *
-     * @param  array   $template
+     * @param  array  $templates
      * @return Field
      */
-    public function setTemplate(array $template = []);
+    public function setTemplates(array $templates = []);
 
     /**
      * Generate Field.
      *
-     * @param  string   $type
+     * @param  string  $type
      * @return \Closure
      */
     public function generate($type);
@@ -30,7 +30,7 @@ interface Control
     /**
      * Build field by type.
      *
-     * @param  string   $type
+     * @param  string  $type
      * @param  mixed   $row
      * @param  \Illuminate\Support\Fluent   $control
      * @return \Illuminate\Support\Fluent
@@ -40,7 +40,7 @@ interface Control
     /**
      * Build data.
      *
-     * @param  string   $type
+     * @param  string  $type
      * @param  mixed   $row
      * @param  \Illuminate\Support\Fluent   $control
      * @return \Illuminate\Support\Fluent
@@ -50,8 +50,8 @@ interface Control
     /**
      * Render the field.
      *
-     * @param  array   $templates
-     * @param  \Illuminate\Support\Fluent   $data
+     * @param  array  $templates
+     * @param  \Illuminate\Support\Fluent  $data
      * @return string
      * @throws \InvalidArgumentException
      */
