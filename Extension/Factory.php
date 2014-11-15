@@ -34,6 +34,13 @@ interface Factory
     public function boot();
 
     /**
+     * Check if extension is booted.
+     *
+     * @return bool
+     */
+    public function booted();
+
+    /**
      * Deactivate an extension.
      *
      * @param  string  $name
