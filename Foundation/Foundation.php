@@ -20,6 +20,13 @@ interface Foundation extends RouteManager
     public function installed();
 
     /**
+     * Get acl services.
+     *
+     * @var \Orchestra\Contracts\Auth\Acl\Acl
+     */
+    public function acl();
+
+    /**
      * Get memory services.
      *
      * @var \Orchestra\Contracts\Memory\Provider
