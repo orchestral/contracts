@@ -22,7 +22,7 @@ interface Foundation extends RouteManager
     /**
      * Get acl services.
      *
-     * @var \Orchestra\Contracts\Auth\Acl\Acl
+     * @var \Orchestra\Contracts\Auth\Authorization
      */
     public function acl();
 

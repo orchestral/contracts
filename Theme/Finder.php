@@ -1,4 +1,4 @@
-<?php namespace Orchestra\Contracts\View\Theme;
+<?php namespace Orchestra\Contracts\Theme;
 
 interface Finder
 {
