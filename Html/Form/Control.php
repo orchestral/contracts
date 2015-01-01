@@ -15,7 +15,7 @@ interface Control
      * Set templates.
      *
      * @param  array  $templates
-     * @return Field
+     * @return $this
      */
     public function setTemplates(array $templates = []);
 
