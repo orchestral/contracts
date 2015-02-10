@@ -1,0 +1,27 @@
+<?php namespace Orchestra\Contracts\Foundation\Listener\Account;
+
+interface UserUpdater extends User
+{
+    /**
+     * Response when update user failed on validation.
+     *
+     * @param  \Illuminate\Support\MessageBag|array  $errors
+     * @return mixed
+     */
+    public function updateUserFailedValidation($errors, $id);
+
+    /**
+     * Response when updating user failed.
+     *
+     * @param  array  $errors
+     * @return mixed
+     */
+    public function updateUserFailed(array $errors);
+
+    /**
+     * Response when updating user succeed.
+     *
+     * @return mixed
+     */
+    public function userUpdated();
+}
