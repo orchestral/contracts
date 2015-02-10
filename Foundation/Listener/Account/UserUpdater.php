@@ -14,6 +14,7 @@ interface UserUpdater extends User
      * Response when update user failed on validation.
      *
      * @param  \Illuminate\Support\MessageBag|array  $errors
+     * @param  string|int  $id
      * @return mixed
      */
     public function updateUserFailedValidation($errors, $id);
