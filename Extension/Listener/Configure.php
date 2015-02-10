@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Fluent;
 
-interface Configure
+interface Configure extends Extension
 {
     /**
      * Response for extension configuration.
