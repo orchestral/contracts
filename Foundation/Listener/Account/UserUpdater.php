@@ -3,6 +3,14 @@
 interface UserUpdater extends User
 {
     /**
+     * Response when update user page succeed.
+     *
+     * @param  array  $data
+     * @return mixed
+     */
+    public function showUserChanger(array $data);
+
+    /**
      * Response when update user failed on validation.
      *
      * @param  \Illuminate\Support\MessageBag|array  $errors

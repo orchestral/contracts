@@ -1,6 +1,8 @@
 <?php namespace Orchestra\Contracts\Extension\Listener;
 
-interface Configure
+use Illuminate\Support\Fluent;
+
+interface Configure extends Extension
 {
     /**
      * Response for extension configuration.
@@ -22,8 +24,8 @@ interface Configure
     /**
      * Response to extension configuration has succeed.
      *
-     * @param  array  $data
+     * @param  \Illuminate\Support\Fluent  $extension
      * @return mixed
      */
-    public function configurationUpdated(array $data);
+    public function configurationUpdated(Fluent $extension);
 }
