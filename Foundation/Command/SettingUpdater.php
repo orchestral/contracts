@@ -8,6 +8,7 @@ interface SettingUpdater
      * View setting page.
      *
      * @param  \Orchestra\Contracts\Foundation\Listener\SettingUpdater  $listener
+     *
      * @return mixed
      */
     public function edit(Listener $listener);
@@ -17,6 +18,7 @@ interface SettingUpdater
      *
      * @param  \Orchestra\Contracts\Foundation\Listener\SettingUpdater  $listener
      * @param  array $input
+     *
      * @return mixed
      */
     public function update(Listener $listener, array $input);

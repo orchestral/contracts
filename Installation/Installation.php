@@ -21,6 +21,7 @@ interface Installation
      *
      * @param  array  $input
      * @param  bool   $allowMultiple
+     *
      * @return bool
      */
     public function createAdmin($input, $allowMultiple = true);

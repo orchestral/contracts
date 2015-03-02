@@ -6,6 +6,7 @@ interface UserUpdater extends User
      * Response when update user page succeed.
      *
      * @param  array  $data
+     *
      * @return mixed
      */
     public function showUserChanger(array $data);
@@ -15,6 +16,7 @@ interface UserUpdater extends User
      *
      * @param  \Illuminate\Support\MessageBag|array  $errors
      * @param  string|int  $id
+     *
      * @return mixed
      */
     public function updateUserFailedValidation($errors, $id);
@@ -23,6 +25,7 @@ interface UserUpdater extends User
      * Response when updating user failed.
      *
      * @param  array  $errors
+     *
      * @return mixed
      */
     public function updateUserFailed(array $errors);

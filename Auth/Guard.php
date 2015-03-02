@@ -17,6 +17,7 @@ interface Guard extends GuardContract
      * Determine if current user has the given role.
      *
      * @param  string|array  $roles
+     *
      * @return bool
      */
     public function is($roles);

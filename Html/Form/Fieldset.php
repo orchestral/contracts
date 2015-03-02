@@ -27,18 +27,20 @@ interface Fieldset
      * @param  string  $type
      * @param  mixed   $name
      * @param  mixed   $callback
+     *
      * @return \Orchestra\Contracts\Html\Form\Field
      */
     public function control($type, $name, $callback = null);
 
     /**
-     * Set Fieldset Legend name
+     * Set Fieldset Legend name.
      *
      * <code>
      *     $fieldset->legend('User Information');
      * </code>
      *
      * @param  string  $name
+     *
      * @return mixed
      */
     public function legend($name = null);

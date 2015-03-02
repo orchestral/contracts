@@ -6,6 +6,7 @@ interface PasswordResetLink
      * Response when request password failed on validation.
      *
      * @param  \Illuminate\Support\MessageBag|array  $errors
+     *
      * @return mixed
      */
     public function resetLinkFailedValidation($errors);
@@ -14,6 +15,7 @@ interface PasswordResetLink
      * Response when request reset password failed.
      *
      * @param  string  $response
+     *
      * @return mixed
      */
     public function resetLinkFailed($response);
@@ -22,6 +24,7 @@ interface PasswordResetLink
      * Response when request reset password succeed.
      *
      * @param  string  $response
+     *
      * @return mixed
      */
     public function resetLinkSent($response);

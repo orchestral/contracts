@@ -6,6 +6,7 @@ interface UserCreator
      * Response when create user page succeed.
      *
      * @param  array  $data
+     *
      * @return mixed
      */
     public function showUserCreator(array $data);
@@ -14,6 +15,7 @@ interface UserCreator
      * Response when storing user failed on validation.
      *
      * @param  \Illuminate\Support\MessageBag|array  $errors
+     *
      * @return mixed
      */
     public function createUserFailedValidation($errors);
@@ -22,6 +24,7 @@ interface UserCreator
      * Response when storing user failed.
      *
      * @param  array  $errors
+     *
      * @return mixed
      */
     public function createUserFailed(array $errors);

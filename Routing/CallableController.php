@@ -7,6 +7,7 @@ interface CallableController
      *
      * @param  string  $method
      * @param  array   $parameters
+     *
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function callAction($method, $parameters);

@@ -14,6 +14,7 @@ interface Theme
      * Set the theme, this would also load the theme manifest.
      *
      * @param  string  $theme
+     *
      * @return void
      */
     public function setTheme($theme);
@@ -71,6 +72,7 @@ interface Theme
      * URL helper for the theme.
      *
      * @param  string  $url
+     *
      * @return string
      */
     public function to($url = '');
@@ -79,6 +81,7 @@ interface Theme
      * Relative URL helper for theme.
      *
      * @param  string  $url
+     *
      * @return string
      */
     public function asset($url = '');

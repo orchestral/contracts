@@ -6,6 +6,7 @@ interface StackableController
      * Register middleware on the controller.
      *
      * @param  mixed  $middleware
+     *
      * @return void
      */
     public function middleware($middleware);

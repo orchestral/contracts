@@ -9,6 +9,7 @@ interface MessageBag extends MessageBagContract
      * Extend Messages instance from session.
      *
      * @param  \Closure  $callback
+     *
      * @return static
      */
     public function extend(Closure $callback);

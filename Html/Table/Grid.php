@@ -17,7 +17,9 @@ interface Grid extends GridContract
      *
      * @param  mixed  $model
      * @param  bool   $paginate
+     *
      * @return $this
+     *
      * @throws \InvalidArgumentException
      */
     public function with($model, $paginate = true);
@@ -31,7 +33,9 @@ interface Grid extends GridContract
      * </code>
      *
      * @param  array  $rows
+     *
      * @return array
+     *
      * @throws \InvalidArgumentException
      */
     public function rows(array $rows = null);
@@ -62,6 +66,7 @@ interface Grid extends GridContract
      *
      * @param  mixed  $name
      * @param  mixed|null  $callback
+     *
      * @return \Orchestra\Contracts\Html\Table\Column
      */
     public function column($name, $callback = null);
@@ -70,6 +75,7 @@ interface Grid extends GridContract
      * Setup pagination.
      *
      * @param  int|null  $perPage
+     *
      * @return $this
      */
     public function paginate($perPage);
@@ -86,6 +92,7 @@ interface Grid extends GridContract
      *
      * @param  array   $attributes
      * @param  string  $key
+     *
      * @return void
      */
     public function searchable(array $attributes, $key = 'q');
@@ -95,6 +102,7 @@ interface Grid extends GridContract
      *
      * @param  string  $orderByKey
      * @param  string  $directionKey
+     *
      * @return void
      */
     public function sortable($orderByKey = 'order_by', $directionKey = 'direction');

@@ -10,6 +10,7 @@ interface Notification
      * @param  \Orchestra\Contracts\Notification\Recipient  $user
      * @param  \Orchestra\Contracts\Notification\Message  $message
      * @param  \Closure|null  $callback
+     *
      * @return \Orchestra\Contracts\Notification\Receipt
      */
     public function send(Recipient $user, Message $message, Closure $callback = null);

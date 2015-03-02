@@ -27,6 +27,7 @@ interface Receipt
      * Set whether or not e-mail is sent via queue/delayed.
      *
      * @param  bool  $usingQueue
+     *
      * @return $this
      */
     public function usingQueue($usingQueue = false);

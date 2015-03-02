@@ -6,6 +6,7 @@ interface Template
      * Button template.
      *
      * @param  \Orchestra\Contracts\Html\Form\Field  $field
+     *
      * @return string
      */
     public function button(Field $field);
@@ -14,6 +15,7 @@ interface Template
      * Checkbox template.
      *
      * @param  \Orchestra\Contracts\Html\Form\Field  $field
+     *
      * @return string
      */
     public function checkbox(Field $field);
@@ -22,6 +24,7 @@ interface Template
      * Checkboxes template.
      *
      * @param  \Orchestra\Contracts\Html\Form\Field  $field
+     *
      * @return string
      */
     public function checkboxes(Field $field);
@@ -30,6 +33,7 @@ interface Template
      * File template.
      *
      * @param  \Orchestra\Contracts\Html\Form\Field  $field
+     *
      * @return string
      */
     public function file(Field $field);
@@ -38,6 +42,7 @@ interface Template
      * Input template.
      *
      * @param  \Orchestra\Contracts\Html\Form\Field  $field
+     *
      * @return string
      */
     public function input(Field $field);
@@ -46,6 +51,7 @@ interface Template
      * Password template.
      *
      * @param  \Orchestra\Contracts\Html\Form\Field  $field
+     *
      * @return string
      */
     public function password(Field $field);
@@ -54,6 +60,7 @@ interface Template
      * Radio template.
      *
      * @param  \Orchestra\Contracts\Html\Form\Field  $field
+     *
      * @return string
      */
     public function radio(Field $field);
@@ -62,6 +69,7 @@ interface Template
      * Select template.
      *
      * @param  \Orchestra\Contracts\Html\Form\Field  $field
+     *
      * @return string
      */
     public function select(Field $field);
@@ -70,6 +78,7 @@ interface Template
      * Textarea template.
      *
      * @param  \Orchestra\Contracts\Html\Form\Field  $field
+     *
      * @return string
      */
     public function textarea(Field $field);

@@ -13,6 +13,7 @@ interface DeferrableServiceContainer
      * Set the application's deferred services.
      *
      * @param  array  $services
+     *
      * @return void
      */
     public function setDeferredServices(array $services);
@@ -29,6 +30,7 @@ interface DeferrableServiceContainer
      *
      * @param  string  $provider
      * @param  string  $service
+     *
      * @return void
      */
     public function registerDeferredProvider($provider, $service = null);

@@ -8,6 +8,7 @@ interface Authorization
      * @param  string|array  $roles
      * @param  string|array  $actions
      * @param  bool  $allow
+     *
      * @return $this
      */
     public function allow($roles, $actions, $allow = true);
@@ -17,6 +18,7 @@ interface Authorization
      * actions based on available type of access.
      *
      * @param  string  $action
+     *
      * @return bool
      */
     public function can($action);
@@ -27,7 +29,9 @@ interface Authorization
      *
      * @param  string|array  $roles
      * @param  string  $action
+     *
      * @return bool
+     *
      * @throws \InvalidArgumentException
      */
     public function check($roles, $action);
@@ -38,6 +42,7 @@ interface Authorization
      *
      * @param  string|array  $roles
      * @param  string|array  $actions
+     *
      * @return $this
      */
     public function deny($roles, $actions);

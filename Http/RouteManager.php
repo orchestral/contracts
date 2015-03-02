@@ -8,6 +8,7 @@ interface RouteManager
      *  Return locate handles configuration for a package/app.
      *
      * @param  string   $path
+     *
      * @return array
      */
     public function locate($path);
@@ -19,6 +20,7 @@ interface RouteManager
      * @param  string           $default
      * @param  array|\Closure   $attributes
      * @param  \Closure|null    $callback
+     *
      * @return array
      */
     public function group($name, $default, $attributes = [], Closure $callback = null);
@@ -27,6 +29,7 @@ interface RouteManager
      *  Return handles URL for a package/app.
      *
      * @param  string   $path
+     *
      * @return string
      */
     public function handles($path);
@@ -35,6 +38,7 @@ interface RouteManager
      *  Return if handles URL match given string.
      *
      * @param  string   $path
+     *
      * @return bool
      */
     public function is($path);
@@ -44,6 +48,7 @@ interface RouteManager
      *
      * @param  string   $name
      * @param  string   $default
+     *
      * @return \Orchestra\Contracts\Extension\RouteGenerator
      */
     public function route($name, $default = '/');
@@ -53,6 +58,7 @@ interface RouteManager
      *
      * @param  string  $path
      * @param  mixed   $listener
+     *
      * @return void
      */
     public function when($path, $listener);

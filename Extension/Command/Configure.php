@@ -10,6 +10,7 @@ interface Configure
      *
      * @param  \Orchestra\Contracts\Extension\Listener\Configure  $listener
      * @param  \Illuminate\Support\Fluent  $extension
+     *
      * @return mixed
      */
     public function configure(Listener $listener, Fluent $extension);
@@ -20,6 +21,7 @@ interface Configure
      * @param  \Orchestra\Contracts\Extension\Listener\Configure  $listener
      * @param  \Illuminate\Support\Fluent  $extension
      * @param  array  $input
+     *
      * @return mixed
      */
     public function update(Listener $listener, Fluent $extension, array $input);
