@@ -8,6 +8,7 @@ interface PasswordUpdater
      * Get password information.
      *
      * @param  \Orchestra\Contracts\Foundation\Listener\Account\PasswordUpdater  $listener
+     *
      * @return mixed
      */
     public function edit(Listener $listener);
@@ -17,6 +18,7 @@ interface PasswordUpdater
      *
      * @param  \Orchestra\Contracts\Foundation\Listener\Account\PasswordUpdater  $listener
      * @param  array  $input
+     *
      * @return mixed
      */
     public function update(Listener $listener, array $input);

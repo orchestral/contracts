@@ -7,6 +7,7 @@ interface DataContainer
      *
      * @param  string  $key
      * @param  mixed   $default
+     *
      * @return mixed
      */
     public function get($key, $default = null);
@@ -16,6 +17,7 @@ interface DataContainer
      *
      * @param  string  $key
      * @param  mixed   $value
+     *
      * @return mixed
      */
     public function set($key, $value = null);
@@ -24,6 +26,7 @@ interface DataContainer
      * Check if item key has a value.
      *
      * @param  string  $key
+     *
      * @return bool
      */
     public function has($key);
@@ -32,6 +35,7 @@ interface DataContainer
      * Remove a item key.
      *
      * @param  string   $key
+     *
      * @return void
      */
     public function forget($key);

@@ -6,6 +6,7 @@ interface Factory
      * Activate an extension.
      *
      * @param  string  $name
+     *
      * @return bool
      */
     public function activate($name);
@@ -14,6 +15,7 @@ interface Factory
      * Check whether an extension is active.
      *
      * @param  string  $name
+     *
      * @return bool
      */
     public function activated($name);
@@ -22,6 +24,7 @@ interface Factory
      * Check whether an extension is available.
      *
      * @param  string  $name
+     *
      * @return bool
      */
     public function available($name);
@@ -44,6 +47,7 @@ interface Factory
      * Deactivate an extension.
      *
      * @param  string  $name
+     *
      * @return bool
      */
     public function deactivate($name);
@@ -75,6 +79,7 @@ interface Factory
      * @param  string  $name
      * @param  string  $option
      * @param  mixed   $default
+     *
      * @return mixed
      */
     public function option($name, $option, $default = null);
@@ -83,6 +88,7 @@ interface Factory
      * Check whether an extension has a writable public asset.
      *
      * @param  string  $name
+     *
      * @return bool
      */
     public function permission($name);
@@ -91,6 +97,7 @@ interface Factory
      * Publish an extension.
      *
      * @param  string  string
+     *
      * @return void
      */
     public function publish($name);
@@ -99,6 +106,7 @@ interface Factory
      * Reset extension.
      *
      * @param  string  $name
+     *
      * @return bool
      */
     public function reset($name);
@@ -108,6 +116,7 @@ interface Factory
      *
      * @param  string  $name
      * @param  string  $default
+     *
      * @return \Orchestra\Contracts\Extension\RouteGenerator
      */
     public function route($name, $default = '/');
@@ -116,6 +125,7 @@ interface Factory
      * Check if extension is started.
      *
      * @param  string  $name
+     *
      * @return bool
      */
     public function started($name);

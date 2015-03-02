@@ -15,6 +15,7 @@ interface Control
      * Set templates.
      *
      * @param  array  $templates
+     *
      * @return $this
      */
     public function setTemplates(array $templates = []);
@@ -23,6 +24,7 @@ interface Control
      * Generate Field.
      *
      * @param  string  $type
+     *
      * @return \Closure
      */
     public function generate($type);
@@ -33,6 +35,7 @@ interface Control
      * @param  string  $type
      * @param  mixed  $row
      * @param  \Illuminate\Support\Fluent  $control
+     *
      * @return \Illuminate\Support\Fluent
      */
     public function buildFieldByType($type, $row, Fluent $control);
@@ -43,6 +46,7 @@ interface Control
      * @param  string  $type
      * @param  mixed  $row
      * @param  \Illuminate\Support\Fluent  $control
+     *
      * @return \Illuminate\Support\Fluent
      */
     public function buildFluentData($type, $row, Fluent $control);
@@ -52,7 +56,9 @@ interface Control
      *
      * @param  array  $templates
      * @param  \Illuminate\Support\Fluent  $data
+     *
      * @return string
+     *
      * @throws \InvalidArgumentException
      */
     public function render($templates, Fluent $data);

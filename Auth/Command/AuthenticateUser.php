@@ -9,6 +9,7 @@ interface AuthenticateUser
      *
      * @param  \Orchestra\Contracts\Auth\Listener\AuthenticateUser  $listener
      * @param  array $input
+     *
      * @return mixed
      */
     public function login(Listener $listener, array $input);
@@ -17,6 +18,7 @@ interface AuthenticateUser
      * Logout a user.
      *
      * @param  \Orchestra\Contracts\Auth\Listener\AuthenticateUser  $listener
+     *
      * @return mixed
      */
     public function logout(Listener $listener);

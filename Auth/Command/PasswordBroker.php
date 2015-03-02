@@ -10,6 +10,7 @@ interface PasswordBroker
      *
      * @param  \Orchestra\Contracts\Auth\Listener\PasswordResetLink  $listener
      * @param  array  $input
+     *
      * @return mixed
      */
     public function store(PasswordResetLink $listener, array $input);
@@ -19,6 +20,7 @@ interface PasswordBroker
      *
      * @param  \Orchestra\Contracts\Auth\Listener\PasswordReset  $listener
      * @param  array  $input
+     *
      * @return mixed
      */
     public function update(PasswordReset $listener, array $input);

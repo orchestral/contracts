@@ -8,6 +8,7 @@ interface Field
      * @param  mixed  $row
      * @param  mixed  $control
      * @param  array  $templates
+     *
      * @return string
      */
     public function getField($row, $control, array $templates = []);

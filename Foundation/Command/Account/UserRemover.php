@@ -9,6 +9,7 @@ interface UserRemover
      *
      * @param  \Orchestra\Contracts\Foundation\Listener\Account\UserRemover  $listener
      * @param  string|int  $id
+     *
      * @return mixed
      */
     public function destroy(Listener $listener, $id);

@@ -45,6 +45,7 @@ interface Foundation extends RouteManager
      *
      * @param  string|null  $namespace
      * @param  \Closure|null  $callback
+     *
      * @return void
      */
     public function namespaced($namespace, Closure $callback);

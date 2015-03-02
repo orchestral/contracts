@@ -9,6 +9,7 @@ interface Factory
      *
      * @param  string  $name
      * @param  \Orchestra\Contracts\Memory\Provider  $memory
+     *
      * @return \Orchestra\Contracts\Authorization\Authorization
      */
     public function make($name = null, Provider $memory = null);
@@ -18,6 +19,7 @@ interface Factory
      *
      * @param  string  $name
      * @param  \Closure  $callback
+     *
      * @return \Orchestra\Contracts\Authorization\Authorization
      */
     public function register($name, $callback = null);
@@ -40,6 +42,7 @@ interface Factory
      * Get ACL instance by name.
      *
      * @param  string  $name
+     *
      * @return \Orchestra\Contracts\Authorization\Authorization
      */
     public function get($name);

@@ -10,6 +10,7 @@ interface UserUpdater
      * @param  \Orchestra\Contracts\Foundation\Listener\Account\UserUpdater  $listener
      * @param  string|int  $id
      * @param  array  $input
+     *
      * @return mixed
      */
     public function update(Listener $listener, $id, array $input);

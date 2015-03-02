@@ -7,6 +7,7 @@ interface Grid
      *
      * @param  mixed  $key
      * @param  mixed  $value
+     *
      * @return array|null
      */
     public function attributes($key = null, $value = null);
@@ -26,6 +27,7 @@ interface Grid
      * </code>
      *
      * @param  string  $name
+     *
      * @return $this
      */
     public function layout($name);
@@ -35,7 +37,9 @@ interface Grid
      *
      * @param  string      $name
      * @param  mixed|null  $callback
+     *
      * @return \Illuminate\Support\Fluent
+     *
      * @throws \InvalidArgumentException
      * @throws \RuntimeException
      */
@@ -45,6 +49,7 @@ interface Grid
      * Forget meta value.
      *
      * @param  string  $key
+     *
      * @return void
      */
     public function forget($key);
@@ -54,6 +59,7 @@ interface Grid
      *
      * @param  string  $key
      * @param  mixed|null  $default
+     *
      * @return mixed
      */
     public function get($key, $default = null);
@@ -63,6 +69,7 @@ interface Grid
      *
      * @param  string  $key
      * @param  mixed   $value
+     *
      * @return array
      */
     public function set($key, $value);
