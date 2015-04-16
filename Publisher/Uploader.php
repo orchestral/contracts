@@ -5,7 +5,7 @@ interface Uploader
     /**
      * Get service connection instance.
      *
-     * @return self
+     * @return object
      */
     public function getConnection();
 
