@@ -1,6 +1,6 @@
 <?php namespace Orchestra\Contracts\Publisher;
 
-interface Publisher 
+interface Publisher
 {
     /**
      * Publish extension.
