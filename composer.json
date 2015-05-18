@@ -1,6 +1,7 @@
 {
 	"name": "orchestra/contracts",
 	"description": "Contracts for Orchestra Platform",
+	"keywords": ["orchestra-platform", "orchestral", "contracts"],
 	"license": "MIT",
 	"authors": [
 		{
@@ -20,7 +21,7 @@
 	},
 	"extra": {
 		"branch-alias": {
-			"dev-master": "3.1-dev"
+			"dev-master": "3.2-dev"
 		}
 	},
 	"support": {
