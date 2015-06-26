@@ -7,7 +7,7 @@ interface RouteGenerator
      *
      * @param  bool  $forceBase
      *
-     * @return string
+     * @return string|null
      */
     public function domain($forceBase = false);
 
