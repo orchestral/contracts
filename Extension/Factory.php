@@ -1,5 +1,7 @@
 <?php namespace Orchestra\Contracts\Extension;
 
+use Closure;
+
 interface Factory
 {
     /**
@@ -42,6 +44,14 @@ interface Factory
      * @return bool
      */
     public function booted();
+
+    /**
+     * Create an event listener or execute it directly.
+     *
+     * @param  \Closure|null  $callback
+     * @return void
+     */
+    public function after(Closure $callback = null);
 
     /**
      * Deactivate an extension.

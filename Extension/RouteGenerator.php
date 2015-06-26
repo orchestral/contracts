@@ -12,6 +12,14 @@ interface RouteGenerator
     public function domain($forceBase = false);
 
     /**
+     * Get route group.
+     *
+     * @param  bool  $forceBase
+     * @return array
+     */
+    public function group($forceBase = false);
+
+    /**
      * Determine if the current request URI matches a pattern.
      *
      * @param  string  $pattern
