@@ -8,9 +8,9 @@ interface ThrottlesLogins
      * Redirect the user after determining they are locked out.
      *
      * @param  \Illuminate\Support\MessageBag|array  $errors
-     * @param  \Orchestra\Contracts\Auth\Command\ThrottlesLogins|null  $throttles
+     * @param  \Orchestra\Contracts\Auth\Command\ThrottlesLogins  $throttles
      *
      * @return mixed
      */
-    public function sendLockoutResponse($errors, Command $throttles = null);
+    public function sendLockoutResponse($errors, Command $throttles);
 }
