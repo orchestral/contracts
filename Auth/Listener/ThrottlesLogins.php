@@ -1,6 +1,6 @@
 <?php namespace Orchestra\Contracts\Auth\Listener;
 
-interface ThrottlesLogins
+interface ThrottlesLogins extends AuthenticateUser
 {
     /**
      * Redirect the user after determining they are locked out.

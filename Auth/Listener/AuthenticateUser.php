@@ -30,11 +30,4 @@ interface AuthenticateUser
      * @return mixed
      */
     public function userHasLoggedIn(Authenticatable $user);
-
-    /**
-     * Response to user has logged out successfully.
-     *
-     * @return mixed
-     */
-    public function userHasLoggedOut();
 }
