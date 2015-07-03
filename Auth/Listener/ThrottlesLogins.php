@@ -5,10 +5,10 @@ interface ThrottlesLogins
     /**
      * Redirect the user after determining they are locked out.
      *
-     * @param  \Illuminate\Support\MessageBag|array  $errors
+     * @param  array  $input
      * @param  int  $seconds
      *
      * @return mixed
      */
-    public function sendLockoutResponse($errors, $seconds);
+    public function sendLockoutResponse($input, $seconds);
 }
