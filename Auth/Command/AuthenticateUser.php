@@ -13,13 +13,4 @@ interface AuthenticateUser
      * @return mixed
      */
     public function login(Listener $listener, array $input);
-
-    /**
-     * Logout a user.
-     *
-     * @param  \Orchestra\Contracts\Auth\Listener\AuthenticateUser  $listener
-     *
-     * @return mixed
-     */
-    public function logout(Listener $listener);
 }
