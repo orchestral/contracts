@@ -10,5 +10,5 @@ interface ThrottlesLogins
      *
      * @return mixed
      */
-    public function sendLockoutResponse($input, $seconds);
+    public function sendLockoutResponse(array $input, $seconds);
 }
