@@ -3,11 +3,11 @@
 interface StatusChecker
 {
     /**
-     * Determine whether current request is in safe mode or not.
+     * Check current mode.
      *
      * @return bool
      */
-    public function check();
+    public function is($mode);
 
     /**
      * Get current mode.
