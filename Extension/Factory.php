@@ -49,6 +49,7 @@ interface Factory
      * Create an event listener or execute it directly.
      *
      * @param  \Closure|null  $callback
+     *
      * @return void
      */
     public function after(Closure $callback = null);

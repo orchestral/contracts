@@ -15,6 +15,7 @@ interface RouteGenerator
      * Get route group.
      *
      * @param  bool  $forceBase
+     *
      * @return array
      */
     public function group($forceBase = false);
