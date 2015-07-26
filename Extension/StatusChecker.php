@@ -1,6 +1,6 @@
 <?php namespace Orchestra\Contracts\Extension;
 
-interface SafeMode
+interface StatusChecker
 {
     /**
      * Determine whether current request is in safe mode or not.
@@ -8,4 +8,11 @@ interface SafeMode
      * @return bool
      */
     public function check();
+
+    /**
+     * Get current mode.
+     *
+     * @return string
+     */
+    public function mode();
 }
