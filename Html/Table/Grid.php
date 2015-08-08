@@ -100,10 +100,11 @@ interface Grid extends GridContract
     /**
      * Execute sortable query filter on model instance.
      *
+     * @param  array   $orderColumns
      * @param  string  $orderByKey
      * @param  string  $directionKey
      *
      * @return void
      */
-    public function sortable($orderByKey = 'order_by', $directionKey = 'direction');
+    public function sortable($orderColumns = [], $orderByKey = 'order_by', $directionKey = 'direction');
 }
