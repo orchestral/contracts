@@ -25,7 +25,7 @@ interface ThrottlesLogins
      *
      * @param  array  $input
      *
-     * @return int
+     * @return void
      */
     public function incrementLoginAttempts(array $input);
 
