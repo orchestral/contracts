@@ -12,15 +12,6 @@ interface ThrottlesLogins
     public function hasTooManyLoginAttempts(array $input);
 
     /**
-     * Get the login attempts for the user.
-     *
-     * @param  array  $input
-     *
-     * @return int
-     */
-    public function getLoginAttempts(array $input);
-
-    /**
      * Get total seconds before doing another login attempts for the user.
      *
      * @param  array  $input
@@ -34,7 +25,7 @@ interface ThrottlesLogins
      *
      * @param  array  $input
      *
-     * @return int
+     * @return void
      */
     public function incrementLoginAttempts(array $input);
 
