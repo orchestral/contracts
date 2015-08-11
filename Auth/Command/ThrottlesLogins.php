@@ -5,36 +5,28 @@ interface ThrottlesLogins
     /**
      * Determine if the user has too many failed login attempts.
      *
-     * @param  array  $input
-     *
      * @return bool
      */
-    public function hasTooManyLoginAttempts(array $input);
+    public function hasTooManyLoginAttempts();
 
     /**
      * Get total seconds before doing another login attempts for the user.
      *
-     * @param  array  $input
-     *
      * @return int
      */
-    public function getSecondsBeforeNextAttempts(array $input);
+    public function getSecondsBeforeNextAttempts();
 
     /**
      * Increment the login attempts for the user.
      *
-     * @param  array  $input
-     *
      * @return void
      */
-    public function incrementLoginAttempts(array $input);
+    public function incrementLoginAttempts();
 
     /**
      * Clear the login locks for the given user credentials.
      *
-     * @param  array  $input
-     *
      * @return void
      */
-    public function clearLoginAttempts(array $input);
+    public function clearLoginAttempts();
 }
