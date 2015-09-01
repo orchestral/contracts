@@ -1,6 +1,6 @@
 <?php namespace Orchestra\Contracts\Authorization;
 
-use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
+use Illuminate\Contracts\Auth\Authenticatable;
 
 interface Authorizable extends Authenticatable
 {
