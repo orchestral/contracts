@@ -62,4 +62,15 @@ interface RouteManager
      * @return void
      */
     public function when($path, $listener);
+
+    /**
+     * Run the callback when route is matched.
+     *
+     * @param  string  $path
+     * @param  string  $on
+     * @param  mixed   $listener
+     *
+     * @return void
+     */
+    public function whenOn($path, $on, $listener);
 }
