@@ -21,15 +21,6 @@ interface Grid extends GridContract
     public function with($data);
 
     /**
-     * Attach raw data instead of assigning a model.
-     *
-     * @param  array|\Illuminate\Support\Fluent  $data
-     *
-     * @return $this
-     */
-    public function row($data);
-
-    /**
      * Get raw data.
      *
      * @return mixed
