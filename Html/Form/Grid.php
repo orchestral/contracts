@@ -14,22 +14,27 @@ interface Grid extends GridContract
      *      $form->with(DB::table('users')->get());
      * </code>
      *
-     * @param  array|\stdClass|\Illuminate\Database\Eloquent\Model|null  $data
+     * @param  array|\stdClass|\Illuminate\Database\Eloquent\Model  $data
      *
-     * @return mixed
+     * @return $this
      */
-    public function with($data = null);
+    public function with($data);
 
     /**
      * Attach raw data instead of assigning a model.
      *
-     * @param  array|\Illuminate\Support\Fluent|null  $data
+     * @param  array|\Illuminate\Support\Fluent  $data
+     *
+     * @return $this
+     */
+    public function row($data);
+
+    /**
+     * Get raw data.
      *
      * @return mixed
-     *
-     * @see $this->with()
      */
-    public function row($data = null);
+    public function data();
 
     /**
      * Create a new Fieldset instance.

@@ -32,13 +32,31 @@ interface Grid extends GridContract
      *      $table->rows(DB::table('users')->get());
      * </code>
      *
-     * @param  array|null  $data
+     * @param  array|\Illuminate\Contracts\Support\Arrayable  $data
      *
      * @return mixed
      *
      * @throws \InvalidArgumentException
      */
-    public function rows(array $data = null);
+    public function rows($data);
+
+    /**
+     * Get raw data.
+     *
+     * @return array
+     *
+     * @throws \InvalidArgumentException
+     */
+    public function data();
+
+    /**
+     * Add or append grid header attributes.
+     *
+     * @param  \Closure|null  $callback
+     *
+     * @return array|null
+     */
+    public function header(Closure $callback = null);
 
     /**
      * Append a new column to the table.
