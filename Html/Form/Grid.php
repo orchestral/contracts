@@ -7,29 +7,29 @@ use Orchestra\Contracts\Html\Grid as GridContract;
 interface Grid extends GridContract
 {
     /**
-     * Attach rows data instead of assigning a model.
+     * Attach data.
      *
      * <code>
      *      // assign a data
      *      $form->with(DB::table('users')->get());
      * </code>
      *
-     * @param  array|\stdClass|\Illuminate\Database\Eloquent\Model  $row
+     * @param  array|\stdClass|\Illuminate\Database\Eloquent\Model  $data
      *
      * @return mixed
      */
-    public function with($row = null);
+    public function with($data = null);
 
     /**
-     * Attach rows data instead of assigning a model.
+     * Attach raw data instead of assigning a model.
      *
      * @param  array  $row
      *
      * @return mixed
      *
-     * @see    static::with()
+     * @see $this->with()
      */
-    public function row($row = null);
+    public function row($data = null);
 
     /**
      * Create a new Fieldset instance.

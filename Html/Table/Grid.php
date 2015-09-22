@@ -32,13 +32,13 @@ interface Grid extends GridContract
      *      $table->rows(DB::table('users')->get());
      * </code>
      *
-     * @param  array  $rows
+     * @param  array  $data
      *
      * @return array
      *
      * @throws \InvalidArgumentException
      */
-    public function rows(array $rows = null);
+    public function rows(array $data = null);
 
     /**
      * Append a new column to the table.
