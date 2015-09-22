@@ -1,5 +1,6 @@
 <?php namespace Orchestra\Contracts\Html\Table;
 
+use Closure;
 use Orchestra\Contracts\Html\Grid as GridContract;
 
 interface Grid extends GridContract
