@@ -14,7 +14,7 @@ interface Grid extends GridContract
      *      $form->with(DB::table('users')->get());
      * </code>
      *
-     * @param  array|\stdClass|\Illuminate\Database\Eloquent\Model  $data
+     * @param  array|\stdClass|\Illuminate\Database\Eloquent\Model|null  $data
      *
      * @return mixed
      */
@@ -23,7 +23,7 @@ interface Grid extends GridContract
     /**
      * Attach raw data instead of assigning a model.
      *
-     * @param  array  $row
+     * @param  array|\Illuminate\Support\Fluent|null  $data
      *
      * @return mixed
      *
@@ -35,7 +35,7 @@ interface Grid extends GridContract
      * Create a new Fieldset instance.
      *
      * @param  string  $name
-     * @param  \Closure  $callback
+     * @param  \Closure|null  $callback
      *
      * @return \Orchestra\Contracts\Html\Form\Fieldset
      */
@@ -45,7 +45,7 @@ interface Grid extends GridContract
      * Add hidden field.
      *
      * @param  string  $name
-     * @param  \Closure  $callback
+     * @param  \Closure|null  $callback
      *
      * @return void
      */

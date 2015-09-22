@@ -32,9 +32,9 @@ interface Grid extends GridContract
      *      $table->rows(DB::table('users')->get());
      * </code>
      *
-     * @param  array  $data
+     * @param  array|null  $data
      *
-     * @return array
+     * @return mixed
      *
      * @throws \InvalidArgumentException
      */
