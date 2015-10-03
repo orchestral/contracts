@@ -10,6 +10,13 @@ interface ThrottlesLogins
     public function hasTooManyLoginAttempts();
 
     /**
+     * Determine how many retries left.
+     *
+     * @return int
+     */
+    public function retriesLeft();
+
+    /**
      * Get total seconds before doing another login attempts for the user.
      *
      * @return int
