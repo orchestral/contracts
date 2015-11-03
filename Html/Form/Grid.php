@@ -14,7 +14,7 @@ interface Grid extends GridContract
      *      $form->with(DB::table('users')->get());
      * </code>
      *
-     * @param  array|\stdClass|\Illuminate\Database\Eloquent\Model  $data
+     * @param  array|\stdClass|\Illuminate\Database\Eloquent\Model|null  $data
      *
      * @return $this
      */

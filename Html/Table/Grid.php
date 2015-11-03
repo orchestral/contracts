@@ -44,7 +44,7 @@ interface Grid extends GridContract
     /**
      * Get raw data.
      *
-     * @return array
+     * @return mixed
      *
      * @throws \InvalidArgumentException
      */
