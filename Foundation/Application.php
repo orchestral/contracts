@@ -10,11 +10,4 @@ interface Application extends ApplicationContract
      * @return string
      */
     public function getCachedExtensionServicesPath();
-
-    /**
-     * Get the application's deferred services.
-     *
-     * @return array
-     */
-    public function getDeferredServices();
 }
