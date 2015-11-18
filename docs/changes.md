@@ -5,6 +5,10 @@ title: Contracts Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.13 {#v3-1-13}
+
+* Move Contracts component out of Kernel component.
+
 ### v3.1.12 {#v3-1-12}
 
 * Update `Orchestra\Contracts\Html\Form\Grid` docblocks.
