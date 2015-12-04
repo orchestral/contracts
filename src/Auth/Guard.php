@@ -1,8 +1,6 @@
 <?php namespace Orchestra\Contracts\Auth;
 
-use Illuminate\Contracts\Auth\Guard as GuardContract;
-
-interface Guard extends GuardContract
+interface Guard
 {
     /**
      * Get the current user's roles of the application.
