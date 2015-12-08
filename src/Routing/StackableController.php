@@ -1,5 +1,8 @@
 <?php namespace Orchestra\Contracts\Routing;
 
+/**
+ * @deprecated since 3.2.0
+ */
 interface StackableController
 {
     /**
