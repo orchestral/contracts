@@ -3,6 +3,16 @@ title: Contracts Change Log
 
 ---
 
+## Version 3.2 {#v3-2}
+
+### v3.2.0 {#v3-2-0}
+
+* Update support to Laravel Framework v5.2.
+* Update contracts compatibility with Orchestra Platform v3.2.
+* Add `Orchestra\Contracts\Foundation\Application` contract.
+* Remove `Orchestra\Contracts\Foundation\ DeferrableServiceContainer` contract.
+* Remove `Orchestra\Contracts\Routing\FilterableController` contract.
+
 ## Version 3.1 {#v3-1}
 
 ### v3.1.13 {#v3-1-13}
