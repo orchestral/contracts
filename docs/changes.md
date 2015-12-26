@@ -5,6 +5,10 @@ title: Contracts Change Log
 
 ## Version 3.2 {#v3-2}
 
+### v3.2.1 {#v3-2-1}
+
+* Remove extending `Illuminate\Contracts\Support\Renderable` from `Orchestra\Contracts\Html\Builder` contracts to allow form and table builder implementation to be accessed from within views.
+
 ### v3.2.0 {#v3-2-0}
 
 * Update support to Laravel Framework v5.2.
