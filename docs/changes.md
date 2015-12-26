@@ -5,6 +5,10 @@ title: Contracts Change Log
 
 ## Version 3.1 {#v3-1}
 
+### v3.1.14 {#v3-1-14}
+
+* Remove extending `Illuminate\Contracts\Support\Renderable` from `Orchestra\Contracts\Html\Builder` contracts to allow form and table builder implementation to be accessed from within views.
+
 ### v3.1.13 {#v3-1-13}
 
 * Move Contracts component out of Kernel component.
