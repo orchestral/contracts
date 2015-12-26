@@ -1,9 +1,8 @@
 <?php namespace Orchestra\Contracts\Html;
 
 use Closure;
-use Illuminate\Contracts\Support\Renderable;
 
-interface Builder extends Renderable
+interface Builder
 {
     /**
      * Extend decoration.
