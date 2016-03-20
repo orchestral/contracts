@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Installation;
+<?php
+
+namespace Orchestra\Contracts\Installation;
 
 interface Requirement
 {

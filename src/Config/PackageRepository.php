@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Config;
+<?php
+
+namespace Orchestra\Contracts\Config;
 
 interface PackageRepository
 {

@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Html\Form;
+<?php
+
+namespace Orchestra\Contracts\Html\Form;
 
 use Illuminate\Support\Fluent;
 

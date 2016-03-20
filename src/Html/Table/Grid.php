@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Html\Table;
+<?php
+
+namespace Orchestra\Contracts\Html\Table;
 
 use Closure;
 use Orchestra\Contracts\Html\Grid as GridContract;

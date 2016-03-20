@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Extension\Command;
+<?php
+
+namespace Orchestra\Contracts\Extension\Command;
 
 use Illuminate\Support\Fluent;
 use Orchestra\Contracts\Extension\Listener\Configure as Listener;

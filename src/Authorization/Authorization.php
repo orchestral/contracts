@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Authorization;
+<?php
+
+namespace Orchestra\Contracts\Authorization;
 
 interface Authorization
 {

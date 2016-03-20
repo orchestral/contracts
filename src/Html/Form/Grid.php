@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Html\Form;
+<?php
+
+namespace Orchestra\Contracts\Html\Form;
 
 use Closure;
 use Illuminate\Database\Eloquent\Model;

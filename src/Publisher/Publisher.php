@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Publisher;
+<?php
+
+namespace Orchestra\Contracts\Publisher;
 
 interface Publisher
 {

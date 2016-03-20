@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Messages;
+<?php
+
+namespace Orchestra\Contracts\Messages;
 
 use Closure;
 use Illuminate\Contracts\Support\MessageBag as MessageBagContract;

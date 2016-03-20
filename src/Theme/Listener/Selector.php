@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Theme\Listener;
+<?php
+
+namespace Orchestra\Contracts\Theme\Listener;
 
 interface Selector
 {

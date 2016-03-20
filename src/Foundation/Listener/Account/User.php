@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Foundation\Listener\Account;
+<?php
+
+namespace Orchestra\Contracts\Foundation\Listener\Account;
 
 interface User
 {

@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Foundation\Command\Account;
+<?php
+
+namespace Orchestra\Contracts\Foundation\Command\Account;
 
 use Orchestra\Contracts\Foundation\Listener\Account\ProfileCreator as Listener;
 

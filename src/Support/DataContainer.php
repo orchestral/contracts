@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Support;
+<?php
+
+namespace Orchestra\Contracts\Support;
 
 interface DataContainer
 {

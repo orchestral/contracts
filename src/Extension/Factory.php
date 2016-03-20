@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Extension;
+<?php
+
+namespace Orchestra\Contracts\Extension;
 
 use Closure;
 

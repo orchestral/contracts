@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Foundation\Command;
+<?php
+
+namespace Orchestra\Contracts\Foundation\Command;
 
 use Orchestra\Contracts\Foundation\Listener\ResourceLoader as Listener;
 

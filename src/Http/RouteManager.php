@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Http;
+<?php
+
+namespace Orchestra\Contracts\Http;
 
 use Closure;
 

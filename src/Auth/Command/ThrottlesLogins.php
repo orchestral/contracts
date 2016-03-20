@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Auth\Command;
+<?php
+
+namespace Orchestra\Contracts\Auth\Command;
 
 interface ThrottlesLogins
 {

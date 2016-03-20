@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Memory;
+<?php
+
+namespace Orchestra\Contracts\Memory;
 
 use Orchestra\Contracts\Support\DataContainer;
 

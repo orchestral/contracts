@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Auth\Listener;
+<?php
+
+namespace Orchestra\Contracts\Auth\Listener;
 
 use Illuminate\Contracts\Auth\Authenticatable;
 

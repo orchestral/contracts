@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Auth;
+<?php
+
+namespace Orchestra\Contracts\Auth;
 
 interface Guard
 {

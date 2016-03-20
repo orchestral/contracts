@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Foundation;
+<?php
+
+namespace Orchestra\Contracts\Foundation;
 
 use Closure;
 use Orchestra\Contracts\Http\RouteManager;

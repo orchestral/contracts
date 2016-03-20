@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Extension\Command;
+<?php
+
+namespace Orchestra\Contracts\Extension\Command;
 
 use Orchestra\Contracts\Extension\Listener\Viewer as Listener;
 

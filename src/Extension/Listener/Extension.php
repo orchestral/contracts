@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Extension\Listener;
+<?php
+
+namespace Orchestra\Contracts\Extension\Listener;
 
 interface Extension
 {

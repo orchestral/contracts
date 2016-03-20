@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Foundation\Listener;
+<?php
+
+namespace Orchestra\Contracts\Foundation\Listener;
 
 interface AssetPublishing
 {

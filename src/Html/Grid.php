@@ -1,4 +1,6 @@
-<?php namespace Orchestra\Contracts\Html;
+<?php
+
+namespace Orchestra\Contracts\Html;
 
 interface Grid
 {
