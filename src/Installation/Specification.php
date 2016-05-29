@@ -33,11 +33,11 @@ interface Specification
     public function check();
 
     /**
-     * Is specification errors.
+     * Get specification error.
      *
      * @return array
      */
-    public function errors();
+    public function error();
 
     /**
      * Is specification optional.
