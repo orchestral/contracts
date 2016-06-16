@@ -5,6 +5,14 @@ namespace Orchestra\Contracts\Installation;
 interface Requirement
 {
     /**
+     * Add requirement specification.
+     *
+     * @param  \Orchestra\Contracts\Installation\Specification  $specification
+     * @return $this
+     */
+    public function add(Specification $specification);
+
+    /**
      * Check all requirement.
      *
      * @return bool
@@ -12,11 +20,11 @@ interface Requirement
     public function check();
 
     /**
-     * Get checklist result.
+     * Get rules.
      *
      * @return array
      */
-    public function getChecklist();
+    public function items();
 
     /**
      * Get installable status.
