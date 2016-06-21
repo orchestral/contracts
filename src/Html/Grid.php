@@ -29,10 +29,11 @@ interface Grid
      * </code>
      *
      * @param  string  $name
+     * @param  array   $data
      *
      * @return $this
      */
-    public function layout($name);
+    public function layout($name, array $data = []);
 
     /**
      * Allow column overwriting.
