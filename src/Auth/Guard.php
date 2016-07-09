@@ -9,7 +9,7 @@ interface Guard
      *
      * If the user is a guest, empty array should be returned.
      *
-     * @return array
+     * @return \Illuminate\Support\Collection
      */
     public function roles();
 
