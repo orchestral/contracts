@@ -57,7 +57,7 @@ interface Grid extends GridContract
      *
      * @param  \Closure|null  $callback
      *
-     * @return array|null
+     * @return \Closure|array|null
      */
     public function header(Closure $callback = null);
 
