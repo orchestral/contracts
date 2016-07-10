@@ -41,10 +41,10 @@ interface Grid
      * @param  string      $name
      * @param  mixed|null  $callback
      *
-     * @return \Illuminate\Support\Fluent
-     *
      * @throws \InvalidArgumentException
      * @throws \RuntimeException
+     *
+     * @return \Illuminate\Support\Fluent
      */
     public function of($name, $callback = null);
 

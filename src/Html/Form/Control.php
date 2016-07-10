@@ -59,9 +59,9 @@ interface Control
      * @param  array  $templates
      * @param  \Illuminate\Support\Fluent  $data
      *
-     * @return string
-     *
      * @throws \InvalidArgumentException
+     *
+     * @return string
      */
     public function render($templates, Fluent $data);
 }

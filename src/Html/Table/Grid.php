@@ -21,9 +21,9 @@ interface Grid extends GridContract
      * @param  mixed  $model
      * @param  bool   $paginate
      *
-     * @return $this
-     *
      * @throws \InvalidArgumentException
+     *
+     * @return $this
      */
     public function with($model, $paginate = true);
 
@@ -37,18 +37,18 @@ interface Grid extends GridContract
      *
      * @param  array|\Illuminate\Contracts\Support\Arrayable  $data
      *
-     * @return mixed
-     *
      * @throws \InvalidArgumentException
+     *
+     * @return mixed
      */
     public function rows($data);
 
     /**
      * Get raw data.
      *
-     * @return mixed
-     *
      * @throws \InvalidArgumentException
+     *
+     * @return mixed
      */
     public function data();
 

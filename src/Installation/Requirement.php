@@ -8,6 +8,7 @@ interface Requirement
      * Add requirement specification.
      *
      * @param  \Orchestra\Contracts\Installation\Specification  $specification
+     *
      * @return $this
      */
     public function add(Specification $specification);

@@ -7,9 +7,9 @@ interface Finder
     /**
      * Detect available themes.
      *
-     * @return \Illuminate\Support\Collection
-     *
      * @throws \RuntimeException
+     *
+     * @return \Illuminate\Support\Collection
      */
     public function detect();
 }

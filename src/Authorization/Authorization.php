@@ -21,9 +21,9 @@ interface Authorization
      *
      * @param  string  $action
      *
-     * @return bool
-     *
      * @throws \InvalidArgumentException
+     *
+     * @return bool
      */
     public function can($action);
 
@@ -44,9 +44,9 @@ interface Authorization
      * @param  string|array  $roles
      * @param  string  $action
      *
-     * @return bool
-     *
      * @throws \InvalidArgumentException
+     *
+     * @return bool
      */
     public function check($roles, $action);
 
