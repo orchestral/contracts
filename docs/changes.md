@@ -5,9 +5,13 @@ title: Contracts Change Log
 
 ## Version 3.3 {#v3-3}
 
-### v3.3.0@dev {#v3-3-0}
+### v3.3.0 {#v3-3-0}
 
 * Update support to Laravel Framework v5.3.
+* Add `Orchestra\Contracts\Installation\Specification`.
+* Update `Orchestra\Contracts\Installation\Requirement`.
+* Remove deprecated `Orchestra\Contracts\Routing\CallableController`.
+* Remove deprecated `Orchestra\Contracts\Routing\StackableController`.
 
 ## Version 3.2 {#v3-2}
 
