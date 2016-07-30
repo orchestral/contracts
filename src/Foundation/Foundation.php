@@ -46,9 +46,10 @@ interface Foundation extends RouteManager
      * Register the given Closure with the "group" function namespace set.
      *
      * @param  string|null  $namespace
+     * @param  array|\Closure  $attributes
      * @param  \Closure|null  $callback
      *
      * @return void
      */
-    public function namespaced($namespace, Closure $callback);
+    public function namespaced($namespace, $attributes = [], Closure $callback = null);
 }
