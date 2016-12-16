@@ -5,6 +5,10 @@ title: Contracts Change Log
 
 ## Version 3.3 {#v3-3}
 
+### v3.3.1 {#v3-3-1}
+
+* Update `Orchestra\Contracts\Foundation\Foundation::namespaced()` contract.
+
 ### v3.3.0 {#v3-3-0}
 
 * Update support to Laravel Framework v5.3.
