@@ -5,6 +5,10 @@ title: Contracts Change Log
 
 ## Version 3.3 {#v3-3}
 
+### v3.3.2 {#v3-3-2}
+
+* Add `Orchestra\Contracts\Support\Transformable`.
+
 ### v3.3.1 {#v3-3-1}
 
 * Update `Orchestra\Contracts\Foundation\Foundation::namespaced()` contract.
