@@ -17,11 +17,11 @@
     },
     "require": {
         "php": ">=7.0",
-        "illuminate/contracts": "~5.5.0"
+        "illuminate/contracts": "dev-master"
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "3.5-dev"
+            "dev-master": "3.6-dev"
         }
     },
     "minimum-stability": "dev"
