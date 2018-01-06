@@ -12,7 +12,7 @@ interface DataContainer
      *
      * @return mixed
      */
-    public function get($key, $default = null);
+    public function get(string $key, $default = null);
 
     /**
      * Set a item value.
@@ -22,7 +22,7 @@ interface DataContainer
      *
      * @return mixed
      */
-    public function set($key, $value = null);
+    public function set(string $key, $value = null);
 
     /**
      * Check if item key has a value.
@@ -31,7 +31,7 @@ interface DataContainer
      *
      * @return bool
      */
-    public function has($key);
+    public function has(string $key): bool;
 
     /**
      * Remove a item key.
@@ -40,12 +40,12 @@ interface DataContainer
      *
      * @return void
      */
-    public function forget($key);
+    public function forget(string $key): bool;
 
     /**
      * Get all available items.
      *
      * @return array
      */
-    public function all();
+    public function all(): array;
 }
