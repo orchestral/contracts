@@ -9,7 +9,7 @@ interface Handler
      *
      * @return array
      */
-    public function initiate();
+    public function initiate(): array;
 
     /**
      * Shutdown method.
@@ -18,5 +18,5 @@ interface Handler
      *
      * @return bool
      */
-    public function finish(array $items = []);
+    public function finish(array $items = []): bool;
 }
