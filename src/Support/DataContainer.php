@@ -38,7 +38,7 @@ interface DataContainer
      *
      * @param  string   $key
      *
-     * @return void
+     * @return bool
      */
     public function forget(string $key): bool;
 
