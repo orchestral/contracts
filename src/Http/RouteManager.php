@@ -9,7 +9,7 @@ interface RouteManager
     /**
      *  Return locate handles configuration for a package/app.
      *
-     * @param  string   $path
+     * @param  string  $path
      *
      * @return array
      */
@@ -18,10 +18,10 @@ interface RouteManager
     /**
      * Return route group dispatch for a package/app.
      *
-     * @param  string           $name
-     * @param  string           $default
-     * @param  array|\Closure   $attributes
-     * @param  \Closure|null    $callback
+     * @param  string  $name
+     * @param  string  $default
+     * @param  array|\Closure  $attributes
+     * @param  \Closure|null  $callback
      *
      * @return array
      */
@@ -30,11 +30,12 @@ interface RouteManager
     /**
      *  Return handles URL for a package/app.
      *
-     * @param  string   $path
+     * @param  string  $path
+     * @param  array  $options
      *
      * @return string
      */
-    public function handles(string $path): string;
+    public function handles(string $path, array $options = []): string;
 
     /**
      *  Return if handles URL match given string.
