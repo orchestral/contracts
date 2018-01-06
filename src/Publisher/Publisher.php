@@ -11,12 +11,12 @@ interface Publisher
      *
      * @return void
      */
-    public function extension($name);
+    public function extension(string $name): void;
 
     /**
      * Publish Orchestra Platform.
      *
      * @return void
      */
-    public function foundation();
+    public function foundation(): void;
 }
