@@ -18,9 +18,9 @@ interface Provider extends DataContainer
      *
      * @param  string  $key
      *
-     * @return void
+     * @return bool
      */
-    public function forget(string $key): void;
+    public function forget(string $key): bool;
 
     /**
      * Get a item value.
