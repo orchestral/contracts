@@ -2,7 +2,7 @@
 
 namespace Orchestra\Contracts\Extension;
 
-interface RouteGenerator
+interface UrlGenerator
 {
     /**
      * Get route domain.
