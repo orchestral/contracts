@@ -12,14 +12,14 @@ interface Dispatcher
      *
      * @return void
      */
-    public function register($name, array $options);
+    public function register(string $name, array $options): void;
 
     /**
      * Boot all extensions.
      *
      * @return void
      */
-    public function boot();
+    public function boot(): void;
 
     /**
      * Start the extension.
@@ -29,7 +29,7 @@ interface Dispatcher
      *
      * @return void
      */
-    public function start($name, array $options);
+    public function start(string $name, array $options): void;
 
     /**
      * Shutdown an extension.
@@ -39,5 +39,5 @@ interface Dispatcher
      *
      * @return void
      */
-    public function finish($name, array $options);
+    public function finish(string $name, array $options): void;
 }

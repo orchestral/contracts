@@ -11,7 +11,7 @@ interface UrlGenerator
      *
      * @return string|null
      */
-    public function domain($forceBase = false);
+    public function domain(bool $forceBase = false): ?string;
 
     /**
      * Get route group.
@@ -29,14 +29,14 @@ interface UrlGenerator
      *
      * @return bool
      */
-    public function is($pattern);
+    public function is(string $pattern): bool;
 
     /**
      * Get the current path info for the request.
      *
      * @return string
      */
-    public function path();
+    public function path(): string;
 
     /**
      * Get route prefix.
@@ -45,14 +45,14 @@ interface UrlGenerator
      *
      * @return string
      */
-    public function prefix($forceBase = false);
+    public function prefix(bool $forceBase = false): string;
 
     /**
      * Get route root.
      *
      * @return string
      */
-    public function root();
+    public function root(): string;
 
     /**
      * Get route to.
@@ -61,5 +61,5 @@ interface UrlGenerator
      *
      * @return string
      */
-    public function to($to);
+    public function to(string $to): string;
 }

@@ -11,7 +11,7 @@ interface Finder
      *
      * @return $this
      */
-    public function addPath($path);
+    public function addPath(string $path);
 
     /**
      * Detect available extensions.
@@ -28,5 +28,5 @@ interface Finder
      *
      * @return bool
      */
-    public function registerExtension($name, $path);
+    public function registerExtension(string $name, string $path): bool;
 }
