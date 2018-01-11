@@ -20,7 +20,7 @@ interface UrlGenerator
      *
      * @return array
      */
-    public function group($forceBase = false);
+    public function group(bool $forceBase = false): array;
 
     /**
      * Determine if the current request URI matches a pattern.
