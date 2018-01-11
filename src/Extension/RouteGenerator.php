@@ -2,64 +2,10 @@
 
 namespace Orchestra\Contracts\Extension;
 
-interface RouteGenerator
+/**
+ * @deprecated v3.5.1
+ */
+interface RouteGenerator extends UrlGenerator
 {
-    /**
-     * Get route domain.
-     *
-     * @param  bool  $forceBase
-     *
-     * @return string|null
-     */
-    public function domain($forceBase = false);
-
-    /**
-     * Get route group.
-     *
-     * @param  bool  $forceBase
-     *
-     * @return array
-     */
-    public function group($forceBase = false);
-
-    /**
-     * Determine if the current request URI matches a pattern.
-     *
-     * @param  string  $pattern
-     *
-     * @return bool
-     */
-    public function is($pattern);
-
-    /**
-     * Get the current path info for the request.
-     *
-     * @return string
-     */
-    public function path();
-
-    /**
-     * Get route prefix.
-     *
-     * @param  bool  $forceBase
-     *
-     * @return string
-     */
-    public function prefix($forceBase = false);
-
-    /**
-     * Get route root.
-     *
-     * @return string
-     */
-    public function root();
-
-    /**
-     * Get route to.
-     *
-     * @param  string  $to
-     *
-     * @return string
-     */
-    public function to($to);
+    //
 }
