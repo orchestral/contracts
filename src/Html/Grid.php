@@ -7,10 +7,10 @@ interface Grid
     /**
      * Add or append Grid attributes.
      *
-     * @param  mixed  $key
+     * @param  string|array|null  $key
      * @param  mixed  $value
      *
-     * @return array|null
+     * @return mixed
      */
     public function attributes($key = null, $value = null);
 
@@ -29,16 +29,16 @@ interface Grid
      * </code>
      *
      * @param  string  $name
-     * @param  array   $data
+     * @param  array  $data
      *
      * @return $this
      */
-    public function layout($name, array $data = []);
+    public function layout(string $name, array $data = []);
 
     /**
      * Allow column overwriting.
      *
-     * @param  string      $name
+     * @param  string  $name
      * @param  mixed|null  $callback
      *
      * @throws \InvalidArgumentException
@@ -46,7 +46,7 @@ interface Grid
      *
      * @return \Illuminate\Support\Fluent
      */
-    public function of($name, $callback = null);
+    public function of(string $name, $callback = null);
 
     /**
      * Forget meta value.
@@ -55,7 +55,7 @@ interface Grid
      *
      * @return void
      */
-    public function forget($key);
+    public function forget(string $key): void;
 
     /**
      * Get meta value.
@@ -65,15 +65,15 @@ interface Grid
      *
      * @return mixed
      */
-    public function get($key, $default = null);
+    public function get(string $key, $default = null);
 
     /**
      * Set meta value.
      *
      * @param  string  $key
-     * @param  mixed   $value
+     * @param  mixed  $value
      *
      * @return array
      */
-    public function set($key, $value);
+    public function set(string $key, $value);
 }
