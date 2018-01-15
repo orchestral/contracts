@@ -25,7 +25,7 @@ interface Grid extends GridContract
      *
      * @return $this
      */
-    public function with($model, $paginate = true);
+    public function with($model, bool $paginate = true);
 
     /**
      * Attach rows data instead of assigning a model.
@@ -39,7 +39,7 @@ interface Grid extends GridContract
      *
      * @throws \InvalidArgumentException
      *
-     * @return mixed
+     * @return $this
      */
     public function rows($data);
 
@@ -48,9 +48,9 @@ interface Grid extends GridContract
      *
      * @throws \InvalidArgumentException
      *
-     * @return mixed
+     * @return array
      */
-    public function data();
+    public function data(): array;
 
     /**
      * Add or append grid header attributes.
@@ -106,7 +106,7 @@ interface Grid extends GridContract
      *
      * @return bool
      */
-    public function paginated();
+    public function paginated(): bool;
 
     /**
      * Execute searchable filter on model instance.
@@ -116,7 +116,7 @@ interface Grid extends GridContract
      *
      * @return void
      */
-    public function searchable(array $attributes, $key = 'q');
+    public function searchable(array $attributes, string $key = 'q'): void;
 
     /**
      * Execute sortable query filter on model instance.
@@ -127,5 +127,9 @@ interface Grid extends GridContract
      *
      * @return void
      */
-    public function sortable($orderColumns = [], $orderByKey = 'order_by', $directionKey = 'direction');
+    public function sortable(
+        array $orderColumns = [],
+        string $orderByKey = 'order_by',
+        string $directionKey = 'direction'
+    ): void;
 }
