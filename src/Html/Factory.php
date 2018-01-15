@@ -2,18 +2,16 @@
 
 namespace Orchestra\Contracts\Html;
 
-use Closure;
-
 interface Factory
 {
     /**
      * Create a new Builder instance.
      *
-     * @param  \Closure|null    $callback
+     * @param  callable|null    $callback
      *
      * @return \Orchestra\Contracts\Html\Builder
      */
-    public function make(Closure $callback = null);
+    public function make(callable $callback = null): Builder;
 
     /**
      * Create a new builder instance of a named builder.
@@ -23,5 +21,5 @@ interface Factory
      *
      * @return \Orchestra\Contracts\Html\Builder
      */
-    public function of($name, Closure $callback = null);
+    public function of(string $name, callable $callback = null): Builder;
 }
