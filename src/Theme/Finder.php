@@ -2,6 +2,8 @@
 
 namespace Orchestra\Contracts\Theme;
 
+use Illuminate\Support\Collection;
+
 interface Finder
 {
     /**
@@ -11,5 +13,5 @@ interface Finder
      *
      * @return \Illuminate\Support\Collection
      */
-    public function detect();
+    public function detect(): Collection;
 }
