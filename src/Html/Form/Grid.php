@@ -32,12 +32,12 @@ interface Grid extends GridContract
     /**
      * Create a new Fieldset instance.
      *
-     * @param  string  $name
+     * @param  string|\Closure  $name
      * @param  \Closure|null  $callback
      *
      * @return \Orchestra\Contracts\Html\Form\Fieldset
      */
-    public function fieldset($name, Closure $callback = null);
+    public function fieldset($name, Closure $callback = null): Fieldset;
 
     /**
      * Add hidden field.
@@ -47,7 +47,7 @@ interface Grid extends GridContract
      *
      * @return void
      */
-    public function hidden($name, $callback = null);
+    public function hidden(string $name, $callback = null): void;
 
     /**
      * Setup form configuration.
