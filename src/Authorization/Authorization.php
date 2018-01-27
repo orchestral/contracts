@@ -13,7 +13,7 @@ interface Authorization
      *
      * @return $this
      */
-    public function allow($roles, $actions, $allow = true);
+    public function allow($roles, $actions, bool $allow = true);
 
     /**
      * Verify whether current user has sufficient roles to access the
@@ -25,7 +25,7 @@ interface Authorization
      *
      * @return bool
      */
-    public function can($action);
+    public function can(string $action): bool;
 
     /**
      * Verify whether current user has sufficient roles to access the
@@ -35,7 +35,7 @@ interface Authorization
      *
      * @return bool
      */
-    public function canIf($action);
+    public function canIf(string $action): bool;
 
     /**
      * Verify whether given roles has sufficient roles to access the
@@ -48,7 +48,7 @@ interface Authorization
      *
      * @return bool
      */
-    public function check($roles, $action);
+    public function check($roles, string $action): bool;
 
     /**
      * Shorthand function to deny access for single or multiple

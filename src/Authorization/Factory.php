@@ -10,21 +10,21 @@ interface Factory
      * Initiate a new ACL Container instance.
      *
      * @param  string  $name
-     * @param  \Orchestra\Contracts\Memory\Provider  $memory
+     * @param  \Orchestra\Contracts\Memory\Provider|null  $memory
      *
      * @return \Orchestra\Contracts\Authorization\Authorization
      */
-    public function make($name = null, Provider $memory = null);
+    public function make(string $name = null, ?Provider $memory = null): Authorization;
 
     /**
      * Register an ACL Container instance with Closure.
      *
      * @param  string  $name
-     * @param  \Closure  $callback
+     * @param  callable|null  $callback
      *
      * @return \Orchestra\Contracts\Authorization\Authorization
      */
-    public function register($name, $callback = null);
+    public function register($name, ?callable $callback = null): Authorization;
 
     /**
      * Shutdown/finish all ACL.
@@ -38,14 +38,14 @@ interface Factory
      *
      * @return array
      */
-    public function all();
+    public function all(): array;
 
     /**
      * Get ACL instance by name.
      *
      * @param  string  $name
      *
-     * @return \Orchestra\Contracts\Authorization\Authorization
+     * @return \Orchestra\Contracts\Authorization\Authorization|null
      */
-    public function get($name);
+    public function get(string $name): ?Authorization;
 }
