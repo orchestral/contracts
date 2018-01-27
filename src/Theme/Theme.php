@@ -15,11 +15,11 @@ interface Theme
     /**
      * Set the theme, this would also load the theme manifest.
      *
-     * @param  string  $theme
+     * @param  string|null  $theme
      *
      * @return void
      */
-    public function setTheme(string $theme): void;
+    public function setTheme(?string $theme): void;
 
     /**
      * Get the theme.
