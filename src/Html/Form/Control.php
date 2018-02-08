@@ -11,7 +11,7 @@ interface Control
      *
      * @return array
      */
-    public function getTemplates();
+    public function getTemplates(): array;
 
     /**
      * Set templates.
@@ -27,9 +27,9 @@ interface Control
      *
      * @param  string  $type
      *
-     * @return \Closure
+     * @return callable
      */
-    public function generate($type);
+    public function generate(string $type): callable;
 
     /**
      * Build field by type.
@@ -38,9 +38,9 @@ interface Control
      * @param  mixed  $row
      * @param  \Illuminate\Support\Fluent  $control
      *
-     * @return \Illuminate\Support\Fluent
+     * @return \Orchestra\Contracts\Html\Form\Field
      */
-    public function buildFieldByType($type, $row, Fluent $control);
+    public function buildFieldByType(string $type, $row, Fluent $control): Field;
 
     /**
      * Build data.
@@ -49,9 +49,9 @@ interface Control
      * @param  mixed  $row
      * @param  \Illuminate\Support\Fluent  $control
      *
-     * @return \Illuminate\Support\Fluent
+     * @return \Orchestra\Contracts\Html\Form\Field
      */
-    public function buildFluentData($type, $row, Fluent $control);
+    public function buildFluentData(string $type, $row, Fluent $control): Field;
 
     /**
      * Render the field.
@@ -63,5 +63,5 @@ interface Control
      *
      * @return string
      */
-    public function render($templates, Fluent $data);
+    public function render(array $templates, Fluent $data): string;
 }

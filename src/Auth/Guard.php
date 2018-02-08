@@ -2,6 +2,8 @@
 
 namespace Orchestra\Contracts\Auth;
 
+use Illuminate\Support\Collection;
+
 interface Guard
 {
     /**
@@ -11,7 +13,7 @@ interface Guard
      *
      * @return \Illuminate\Support\Collection
      */
-    public function roles();
+    public function roles(): Collection;
 
     /**
      * Determine if current user has the given role.
@@ -20,5 +22,5 @@ interface Guard
      *
      * @return bool
      */
-    public function is($roles);
+    public function is($roles): bool;
 }

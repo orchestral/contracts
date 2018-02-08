@@ -29,12 +29,12 @@ interface MessageBag extends MessageBagContract
      *
      * @return void
      */
-    public function save();
+    public function save(): void;
 
     /**
      * Compile the instance into serialize.
      *
      * @return string  serialize of this instance
      */
-    public function serialize();
+    public function serialize(): string;
 }

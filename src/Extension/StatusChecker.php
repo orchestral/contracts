@@ -11,7 +11,7 @@ interface StatusChecker
      *
      * @return bool
      */
-    public function is($mode);
+    public function is(string $mode): bool;
 
     /**
      * Check current mode is not equal given $mode.
@@ -20,12 +20,12 @@ interface StatusChecker
      *
      * @return bool
      */
-    public function isNot($mode);
+    public function isNot(string $mode): bool;
 
     /**
      * Get current mode.
      *
      * @return string
      */
-    public function mode();
+    public function mode(): string;
 }

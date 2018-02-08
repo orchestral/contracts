@@ -11,26 +11,26 @@ interface Provider extends DataContainer
      *
      * @return bool
      */
-    public function finish();
+    public function finish(): bool;
 
     /**
      * Remove a item key.
      *
      * @param  string  $key
      *
-     * @return void
+     * @return bool
      */
-    public function forget($key);
+    public function forget(string $key): bool;
 
     /**
      * Get a item value.
      *
      * @param  string  $key
-     * @param  mixed   $default
+     * @param  mixed  $default
      *
      * @return mixed
      */
-    public function get($key, $default = null);
+    public function get(string $key, $default = null);
 
     /**
      * Check if item key has a value.
@@ -39,15 +39,15 @@ interface Provider extends DataContainer
      *
      * @return bool
      */
-    public function has($key);
+    public function has(string $key): bool;
 
     /**
      * Set a value from a key.
      *
-     * @param  string  $key    A string of key to add the value.
-     * @param  mixed   $value  The value.
+     * @param  string  $key
+     * @param  mixed  $value
      *
      * @return mixed
      */
-    public function put($key, $value = '');
+    public function put(string $key, $value = '');
 }

@@ -9,14 +9,14 @@ interface Publisher
      *
      * @param  string  $name
      *
-     * @return void
+     * @return bool
      */
-    public function extension($name);
+    public function extension(string $name): bool;
 
     /**
      * Publish Orchestra Platform.
      *
-     * @return void
+     * @return bool
      */
-    public function foundation();
+    public function foundation(): bool;
 }

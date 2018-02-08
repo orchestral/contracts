@@ -13,7 +13,7 @@ interface Factory
      *
      * @return bool
      */
-    public function activate($name);
+    public function activate(string $name): bool;
 
     /**
      * Check whether an extension is active.
@@ -22,7 +22,7 @@ interface Factory
      *
      * @return bool
      */
-    public function activated($name);
+    public function activated(string $name): bool;
 
     /**
      * Check whether an extension is available.
@@ -31,7 +31,7 @@ interface Factory
      *
      * @return bool
      */
-    public function available($name);
+    public function available(string $name): bool;
 
     /**
      * Boot active extensions.
@@ -45,7 +45,7 @@ interface Factory
      *
      * @return bool
      */
-    public function booted();
+    public function booted(): bool;
 
     /**
      * Create an event listener or execute it directly.
@@ -54,7 +54,7 @@ interface Factory
      *
      * @return void
      */
-    public function after(Closure $callback = null);
+    public function after(Closure $callback = null): void;
 
     /**
      * Deactivate an extension.
@@ -63,7 +63,7 @@ interface Factory
      *
      * @return bool
      */
-    public function deactivate($name);
+    public function deactivate(string $name): bool;
 
     /**
      * Detect all extensions.
@@ -77,7 +77,7 @@ interface Factory
      *
      * @return \Orchestra\Contracts\Extension\Finder
      */
-    public function finder();
+    public function finder(): Finder;
 
     /**
      * Shutdown all extensions.
@@ -95,7 +95,7 @@ interface Factory
      *
      * @return mixed
      */
-    public function option($name, $option, $default = null);
+    public function option(string $name, string $option, $default = null);
 
     /**
      * Check whether an extension has a writable public asset.
@@ -104,7 +104,7 @@ interface Factory
      *
      * @return bool
      */
-    public function permission($name);
+    public function permission(string $name): bool;
 
     /**
      * Publish an extension.
@@ -113,7 +113,7 @@ interface Factory
      *
      * @return void
      */
-    public function publish($name);
+    public function publish(string $name): void;
 
     /**
      * Reset extension.
@@ -122,7 +122,7 @@ interface Factory
      *
      * @return bool
      */
-    public function reset($name);
+    public function reset(string $name): bool;
 
     /**
      * Get extension route handle.
@@ -130,9 +130,9 @@ interface Factory
      * @param  string  $name
      * @param  string  $default
      *
-     * @return \Orchestra\Contracts\Extension\RouteGenerator
+     * @return \Orchestra\Contracts\Extension\UrlGenerator
      */
-    public function route($name, $default = '/');
+    public function route(string $name, string $default = '/'): UrlGenerator;
 
     /**
      * Check if extension is started.
@@ -141,5 +141,5 @@ interface Factory
      *
      * @return bool
      */
-    public function started($name);
+    public function started(string $name): bool;
 }

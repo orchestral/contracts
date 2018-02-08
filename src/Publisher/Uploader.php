@@ -18,7 +18,7 @@ interface Uploader
      *
      * @return void
      */
-    public function setConnection($client);
+    public function setConnection($client): void;
 
     /**
      * Connect to the service.
@@ -27,7 +27,7 @@ interface Uploader
      *
      * @return void
      */
-    public function connect($config = []);
+    public function connect(array $config = []);
 
     /**
      * Upload the file.
@@ -36,12 +36,12 @@ interface Uploader
      *
      * @return bool
      */
-    public function upload($name);
+    public function upload(string $name): bool;
 
     /**
      * Verify that the driver is connected to a service.
      *
      * @return bool
      */
-    public function connected();
+    public function connected(): bool;
 }

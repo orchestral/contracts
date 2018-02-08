@@ -2,16 +2,14 @@
 
 namespace Orchestra\Contracts\Html;
 
-use Closure;
-
 interface Builder
 {
     /**
      * Extend decoration.
      *
-     * @param  \Closure  $callback
+     * @param  callable  $callback
      *
      * @return $this
      */
-    public function extend(Closure $callback = null);
+    public function extend(callable $callback = null);
 }

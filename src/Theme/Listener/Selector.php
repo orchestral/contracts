@@ -21,7 +21,7 @@ interface Selector
      *
      * @return mixed
      */
-    public function themeHasActivated($type, $id);
+    public function themeHasActivated(string $type, $id);
 
     /**
      * Response when theme verification failed.
