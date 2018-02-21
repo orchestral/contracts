@@ -9,14 +9,21 @@ interface Installation
      *
      * @return void
      */
-    public function bootInstallerFiles();
+    public function bootInstallerFiles(): void;
+
+    /**
+     * Boot installer files for testing.
+     *
+     * @return void
+     */
+    public function bootInstallerFilesForTesting(): void;
 
     /**
      * Migrate Orchestra Platform schema.
      *
      * @return bool
      */
-    public function migrate();
+    public function migrate(): bool;
 
     /**
      * Create administrator account.
@@ -26,5 +33,16 @@ interface Installation
      *
      * @return bool
      */
-    public function createAdmin($input, $allowMultiple = true);
+    public function make(array $input, bool $allowMultiple = true): bool;
+
+    /**
+     * Validate request.
+     *
+     * @param  array  $input
+     *
+     * @throws \Illuminate\Validation\ValidationException
+     *
+     * @return bool
+     */
+    public function validate(array $input): bool;
 }
