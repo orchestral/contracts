@@ -3,6 +3,8 @@
 namespace Orchestra\Contracts\Foundation;
 
 use Closure;
+use Orchestra\Contracts\Auth\Authorization;
+use Orchestra\Contracts\Memory\Provider as MemoryProvider;
 use Orchestra\Contracts\Http\RouteManager;
 
 interface Foundation extends RouteManager
@@ -19,21 +21,21 @@ interface Foundation extends RouteManager
      *
      * @return bool
      */
-    public function installed();
+    public function installed(): bool;
 
     /**
      * Get acl services.
      *
      * @var \Orchestra\Contracts\Auth\Authorization
      */
-    public function acl();
+    public function acl(): Authorization;
 
     /**
      * Get memory services.
      *
      * @var \Orchestra\Contracts\Memory\Provider
      */
-    public function memory();
+    public function memory(): MemoryProvider;
 
     /**
      * Get menu services.
@@ -51,5 +53,5 @@ interface Foundation extends RouteManager
      *
      * @return void
      */
-    public function namespaced($namespace, $attributes = [], Closure $callback = null);
+    public function namespaced($namespace, $attributes = [], Closure $callback = null): void;
 }
