@@ -9,14 +9,14 @@ interface Message
      *
      * @return array
      */
-    public function getData();
+    public function getData(): array;
 
     /**
      * Get subject.
      *
      * @return string
      */
-    public function getSubject();
+    public function getSubject(): string;
 
     /**
      * Get view.

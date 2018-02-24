@@ -15,5 +15,5 @@ interface Notification
      *
      * @return \Orchestra\Contracts\Notification\Receipt
      */
-    public function send(Recipient $user, Message $message, Closure $callback = null);
+    public function send(Recipient $user, Message $message, Closure $callback = null): Receipt;
 }
