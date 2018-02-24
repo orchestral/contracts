@@ -21,7 +21,7 @@ interface Message
     /**
      * Get view.
      *
-     * @return string|array
+     * @return \Illuminate\Contracts\Mail\Mailable|string|array
      */
     public function getView();
 }
