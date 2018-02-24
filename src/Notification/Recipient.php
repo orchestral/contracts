@@ -9,12 +9,12 @@ interface Recipient
      *
      * @return string
      */
-    public function getRecipientEmail();
+    public function getRecipientEmail(): string;
 
     /**
      * Get the fullname where notification are sent.
      *
      * @return string
      */
-    public function getRecipientName();
+    public function getRecipientName(): string;
 }

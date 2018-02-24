@@ -18,19 +18,19 @@ interface Requirement
      *
      * @return bool
      */
-    public function check();
+    public function check(): bool;
 
     /**
      * Get rules.
      *
-     * @return array
+     * @return iterable
      */
-    public function items();
+    public function items(): iterable;
 
     /**
      * Get installable status.
      *
      * @return bool
      */
-    public function isInstallable();
+    public function isInstallable(): bool;
 }

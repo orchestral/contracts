@@ -9,33 +9,33 @@ interface Specification
      *
      * @return string
      */
-    public function uid();
+    public function uid(): string;
 
     /**
      * Get specification title.
      *
      * @return string
      */
-    public function title();
+    public function title(): string;
 
     /**
      * Get specification description.
      *
      * @return string
      */
-    public function description();
+    public function description(): string;
 
     /**
      * Check specification requirement.
      *
      * @return bool
      */
-    public function check();
+    public function check(): bool;
 
     /**
      * Get specification error.
      *
-     * @return array
+     * @return array|null
      */
     public function error();
 
@@ -44,5 +44,5 @@ interface Specification
      *
      * @return bool
      */
-    public function optional();
+    public function optional(): bool;
 }
