@@ -26,16 +26,16 @@ interface Foundation extends RouteManager
     /**
      * Get acl services.
      *
-     * @var \Orchestra\Contracts\Auth\Authorization
+     * @var \Orchestra\Contracts\Auth\Authorization|null
      */
-    public function acl(): Authorization;
+    public function acl(): ?Authorization;
 
     /**
      * Get memory services.
      *
-     * @var \Orchestra\Contracts\Memory\Provider
+     * @var \Orchestra\Contracts\Memory\Provider|null
      */
-    public function memory(): MemoryProvider;
+    public function memory(): ?MemoryProvider;
 
     /**
      * Get menu services.
