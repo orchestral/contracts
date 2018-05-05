@@ -38,6 +38,30 @@ interface Authorization
     public function canIf(string $action): bool;
 
     /**
+     * Verify whether current user has sufficient roles to access the
+     * actions based on available type of access.
+     *
+     * @param  \Orchestra\Contracts\Authorization\Authorizable  $user
+     * @param  string  $action     A string of action name
+     *
+     * @throws \InvalidArgumentException
+     *
+     * @return bool
+     */
+    public function canAs(Authorizable $user, string $action): bool;
+
+    /**
+     * Verify whether current user has sufficient roles to access the
+     * actions based on available type of access if the action exist.
+     *
+     * @param  \Orchestra\Contracts\Authorization\Authorizable  $user
+     * @param  string  $action     A string of action name
+     *
+     * @return bool
+     */
+    public function canIfAs(Authorizable $user, string $action): bool;
+
+    /**
      * Verify whether given roles has sufficient roles to access the
      * actions based on available type of access.
      *

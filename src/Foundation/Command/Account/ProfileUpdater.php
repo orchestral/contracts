@@ -23,5 +23,5 @@ interface ProfileUpdater
      *
      * @return mixed
      */
-    public function update(Listener $listener, array $input);
+    public function update(Listener $listener,array $input);
 }
