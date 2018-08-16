@@ -14,5 +14,5 @@ interface UserViewer
      *
      * @return mixed
      */
-    public function index(Listener $listener, array $input = []);
+    public function view(Listener $listener, array $input = []);
 }

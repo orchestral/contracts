@@ -13,5 +13,5 @@ interface Viewer
      *
      * @return mixed
      */
-    public function index(Listener $listener);
+    public function view(Listener $listener);
 }
