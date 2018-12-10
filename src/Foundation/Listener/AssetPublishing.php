@@ -19,11 +19,4 @@ interface AssetPublishing
      * @return mixed
      */
     public function publishingHasSucceed();
-
-    /**
-     * Redirect back to current publisher.
-     *
-     * @return mixed
-     */
-    public function redirectToCurrentPublisher();
 }
