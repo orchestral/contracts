@@ -5,22 +5,6 @@ namespace Orchestra\Contracts\Publisher;
 interface Uploader
 {
     /**
-     * Get service connection instance.
-     *
-     * @return object
-     */
-    public function getConnection();
-
-    /**
-     * Get service connection instance.
-     *
-     * @param  object  $client
-     *
-     * @return void
-     */
-    public function setConnection($client): void;
-
-    /**
      * Connect to the service.
      *
      * @param  array  $config
