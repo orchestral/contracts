@@ -2,7 +2,6 @@
 
 This changelog references the relevant changes (bug and security fixes) done to `orchestra/contracts`.
 
-
 ## 3.7.1
 
 Released: 2018-12-11
