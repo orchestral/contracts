@@ -12,17 +12,17 @@ interface MessageBag extends MessageBagContract
      *
      * @param  \Closure  $callback
      *
-     * @return static
+     * @return \Illuminate\Contracts\Support\MessageBag
      */
-    public function extend(Closure $callback);
+    public function extend(Closure $callback): MessageBagContract;
 
     /**
      * Retrieve Message instance from Session, the data should be in
      * serialize, so we need to unserialize it first.
      *
-     * @return $this
+     * @return \Illuminate\Contracts\Support\MessageBag
      */
-    public function retrieve();
+    public function copy(): MessageBagContract;
 
     /**
      * Store current instance.
@@ -30,11 +30,4 @@ interface MessageBag extends MessageBagContract
      * @return void
      */
     public function save(): void;
-
-    /**
-     * Compile the instance into serialize.
-     *
-     * @return string  serialize of this instance
-     */
-    public function serialize(): string;
 }
