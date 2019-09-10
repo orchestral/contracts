@@ -15,6 +15,8 @@ interface Installation
      * Boot installer files for testing.
      *
      * @return void
+     *
+     * @deprecated v4.x
      */
     public function bootInstallerFilesForTesting(): void;
 
