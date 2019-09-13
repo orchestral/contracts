@@ -3,8 +3,8 @@
 namespace Orchestra\Contracts\Foundation;
 
 use Closure;
-use Orchestra\Contracts\Http\RouteManager;
 use Orchestra\Contracts\Authorization\Authorization;
+use Orchestra\Contracts\Http\RouteManager;
 use Orchestra\Contracts\Memory\Provider as MemoryProvider;
 
 interface Foundation extends RouteManager
