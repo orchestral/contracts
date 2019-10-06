@@ -17,7 +17,7 @@
     },
     "require": {
         "php": ">=7.2",
-        "illuminate/contracts": "^6.0"
+        "illuminate/contracts": "^6.1"
     },
     "extra": {
         "branch-alias": {
