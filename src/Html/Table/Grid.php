@@ -111,24 +111,24 @@ interface Grid extends GridContract
     /**
      * Execute searchable filter on model instance.
      *
-     * @param  array   $attributes
-     * @param  string  $key
+     * @param  array   $columns
+     * @param  string  $searchKey
      *
      * @return void
      */
-    public function searchable(array $attributes, string $key = 'q'): void;
+    public function searchable(array $columns, string $searchKey = 'q'): void;
 
     /**
      * Execute sortable query filter on model instance.
      *
-     * @param  array   $orderColumns
+     * @param  array   $config
      * @param  string  $orderByKey
      * @param  string  $directionKey
      *
      * @return void
      */
     public function sortable(
-        array $orderColumns = [],
+        array $config = [],
         string $orderByKey = 'order_by',
         string $directionKey = 'direction'
     ): void;
