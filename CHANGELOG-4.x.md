@@ -2,6 +2,14 @@
 
 This changelog references the relevant changes (bug and security fixes) done to `orchestra/contracts`.
 
+## 4.1.1
+
+Released: 2019-12-06
+
+### Changes
+
+* Tweak variable names based on implementation changes.
+
 ## 4.1.0
 
 Released: 2019-10-06
