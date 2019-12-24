@@ -24,9 +24,9 @@ interface Installation
      * @param  array  $input
      * @param  bool   $allowMultiple
      *
-     * @return bool
+     * @return void
      */
-    public function make(array $input, bool $allowMultiple = true): bool;
+    public function make(array $input, bool $allowMultiple = true): void;
 
     /**
      * Validate request.
