@@ -35,9 +35,9 @@ interface Specification
     /**
      * Get specification error.
      *
-     * @return array|null
+     * @return array|string|null
      */
-    public function error(): ?array;
+    public function error();
 
     /**
      * Is specification optional.
