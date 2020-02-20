@@ -19,5 +19,10 @@
         "php": ">=7.3",
         "illuminate/contracts": "^8.0"
     },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "6.0-dev"
+        }
+    },
     "minimum-stability": "dev"
 }
