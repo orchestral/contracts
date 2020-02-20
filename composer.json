@@ -16,8 +16,8 @@
         }
     },
     "require": {
-        "php": ">=7.2",
-        "illuminate/contracts": "dev-master"
+        "php": ">=7.3",
+        "illuminate/contracts": "^8.0"
     },
     "minimum-stability": "dev"
 }
