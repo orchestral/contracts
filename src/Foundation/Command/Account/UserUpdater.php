@@ -9,9 +9,7 @@ interface UserUpdater
     /**
      * Update a user.
      *
-     * @param  \Orchestra\Contracts\Foundation\Listener\Account\UserUpdater  $listener
      * @param  string|int  $id
-     * @param  array  $input
      *
      * @return mixed
      */

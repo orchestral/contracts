@@ -9,9 +9,6 @@ interface UserViewer
     /**
      * View list users page.
      *
-     * @param  \Orchestra\Contracts\Foundation\Listener\Account\UserViewer  $listener
-     * @param  array  $input
-     *
      * @return mixed
      */
     public function view(Listener $listener, array $input = []);

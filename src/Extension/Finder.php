@@ -2,12 +2,12 @@
 
 namespace Orchestra\Contracts\Extension;
 
+use Illuminate\Support\Collection;
+
 interface Finder
 {
     /**
      * Add a new path to finder.
-     *
-     * @param  string  $path
      *
      * @return $this
      */
@@ -15,18 +15,11 @@ interface Finder
 
     /**
      * Detect available extensions.
-     *
-     * @return \Illuminate\Support\Collection|array
      */
-    public function detect();
+    public function detect(): Collection;
 
     /**
      * Register the extension.
-     *
-     * @param  string  $name
-     * @param  string  $path
-     *
-     * @return bool
      */
     public function registerExtension(string $name, string $path): bool;
 }

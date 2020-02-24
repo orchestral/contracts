@@ -14,8 +14,6 @@ interface UserRemover
     /**
      * Response when destroying user failed.
      *
-     * @param  array  $errors
-     *
      * @return mixed
      */
     public function userDeletionFailed(array $errors);

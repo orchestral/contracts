@@ -7,8 +7,6 @@ interface SettingUpdater
     /**
      * Response when show setting page.
      *
-     * @param  array  $data
-     *
      * @return mixed
      */
     public function showSettingChanger(array $data);

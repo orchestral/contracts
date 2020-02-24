@@ -10,9 +10,6 @@ interface Activator
     /**
      * Activate an extension.
      *
-     * @param  \Orchestra\Contracts\Extension\Listener\Activator  $listener
-     * @param  \Illuminate\Support\Fluent  $extension
-     *
      * @return mixed
      */
     public function activate(Listener $listener, Fluent $extension);

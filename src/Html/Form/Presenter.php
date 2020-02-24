@@ -16,8 +16,6 @@ interface Presenter
     /**
      * Setup form layout.
      *
-     * @param  \Orchestra\Contracts\Html\Form\Grid  $form
-     *
      * @return void
      */
     public function setupForm(Grid $form);

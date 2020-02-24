@@ -9,8 +9,6 @@ interface Viewer
     /**
      * View all extension page.
      *
-     * @param  \Orchestra\Contracts\Extension\Listener\Viewer  $listener
-     *
      * @return mixed
      */
     public function view(Listener $listener);

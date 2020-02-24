@@ -9,17 +9,12 @@ interface AssetPublisher
     /**
      * Run publishing if possible.
      *
-     * @param  \Orchestra\Contracts\Foundation\Listener\AssetPublishing  $listener
-     *
      * @return mixed
      */
     public function executeAndRedirect(Listener $listener);
 
     /**
      * Publish process.
-     *
-     * @param  \Orchestra\Contracts\Foundation\Listener\AssetPublishing  $listener
-     * @param  array $input
      *
      * @return mixed
      */

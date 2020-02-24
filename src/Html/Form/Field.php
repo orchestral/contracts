@@ -8,7 +8,6 @@ interface Field
      * Get value of column.
      *
      * @param  mixed  $row
-     * @param  array  $templates
      *
      * @return string
      */

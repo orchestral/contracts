@@ -7,8 +7,6 @@ interface UserViewer
     /**
      * Response when list users page succeed.
      *
-     * @param  array  $data
-     *
      * @return mixed
      */
     public function showUsers(array $data);

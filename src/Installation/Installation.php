@@ -6,36 +6,23 @@ interface Installation
 {
     /**
      * Boot installer files.
-     *
-     * @return void
      */
     public function bootInstallerFiles(): void;
 
     /**
      * Migrate Orchestra Platform schema.
-     *
-     * @return bool
      */
     public function migrate(): bool;
 
     /**
      * Create administrator account.
-     *
-     * @param  array  $input
-     * @param  bool   $allowMultiple
-     *
-     * @return void
      */
     public function make(array $input, bool $allowMultiple = true): void;
 
     /**
      * Validate request.
      *
-     * @param  array  $input
-     *
      * @throws \Illuminate\Validation\ValidationException
-     *
-     * @return bool
      */
     public function validate(array $input): bool;
 }

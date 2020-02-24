@@ -8,21 +8,13 @@ interface Factory
 {
     /**
      * Initiate a new ACL Container instance.
-     *
-     * @param  string  $name
-     * @param  \Orchestra\Contracts\Memory\Provider|null  $memory
-     *
-     * @return \Orchestra\Contracts\Authorization\Authorization
      */
     public function make(string $name = null, ?Provider $memory = null): Authorization;
 
     /**
      * Register an ACL Container instance with Closure.
      *
-     * @param  string  $name
-     * @param  callable|null  $callback
-     *
-     * @return \Orchestra\Contracts\Authorization\Authorization
+     * @param  string|callable  $name
      */
     public function register($name, ?callable $callback = null): Authorization;
 
@@ -35,17 +27,11 @@ interface Factory
 
     /**
      * Get all ACL instances.
-     *
-     * @return array
      */
     public function all(): array;
 
     /**
      * Get ACL instance by name.
-     *
-     * @param  string  $name
-     *
-     * @return \Orchestra\Contracts\Authorization\Authorization|null
      */
     public function get(string $name): ?Authorization;
 }

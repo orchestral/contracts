@@ -19,7 +19,6 @@ interface Grid extends GridContract
      * </code>
      *
      * @param  mixed  $model
-     * @param  bool   $paginate
      *
      * @throws \InvalidArgumentException
      *
@@ -47,15 +46,11 @@ interface Grid extends GridContract
      * Get raw data.
      *
      * @throws \InvalidArgumentException
-     *
-     * @return array
      */
     public function data(): array;
 
     /**
      * Add or append grid header attributes.
-     *
-     * @param  \Closure|null  $callback
      *
      * @return \Closure|array|null
      */
@@ -103,29 +98,16 @@ interface Grid extends GridContract
 
     /**
      * Get whether current setup is paginated.
-     *
-     * @return bool
      */
     public function paginated(): bool;
 
     /**
      * Execute searchable filter on model instance.
-     *
-     * @param  array   $columns
-     * @param  string  $searchKey
-     *
-     * @return void
      */
     public function searchable(array $columns, string $searchKey = 'q'): void;
 
     /**
      * Execute sortable query filter on model instance.
-     *
-     * @param  array   $config
-     * @param  string  $orderByKey
-     * @param  string  $directionKey
-     *
-     * @return void
      */
     public function sortable(
         array $config = [],

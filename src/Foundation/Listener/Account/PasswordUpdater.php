@@ -7,8 +7,6 @@ interface PasswordUpdater extends User
     /**
      * Response to show user password.
      *
-     * @param  array  $data
-     *
      * @return mixed
      */
     public function showPasswordChanger(array $data);
@@ -31,8 +29,6 @@ interface PasswordUpdater extends User
 
     /**
      * Response when update password failed.
-     *
-     * @param  array  $errors
      *
      * @return mixed
      */

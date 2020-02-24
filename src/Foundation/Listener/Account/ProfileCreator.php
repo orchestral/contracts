@@ -7,8 +7,6 @@ interface ProfileCreator
     /**
      * Response when show registration page succeed.
      *
-     * @param  array  $data
-     *
      * @return mixed
      */
     public function showProfileCreator(array $data);
@@ -24,8 +22,6 @@ interface ProfileCreator
 
     /**
      * Response when create a user failed.
-     *
-     * @param  array  $errors
      *
      * @return mixed
      */
