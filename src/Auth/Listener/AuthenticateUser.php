@@ -18,16 +18,12 @@ interface AuthenticateUser
     /**
      * Response to user log-in trigger has failed authentication.
      *
-     * @param  array  $input
-     *
      * @return mixed
      */
     public function userLoginHasFailedAuthentication(array $input);
 
     /**
      * Response to user has logged in successfully.
-     *
-     * @param  \Illuminate\Contracts\Auth\Authenticatable  $user
      *
      * @return mixed
      */

@@ -7,8 +7,6 @@ interface Selector
     /**
      * Response when list themes page succeed.
      *
-     * @param  array  $data
-     *
      * @return mixed
      */
     public function showThemeSelection(array $data);
@@ -16,7 +14,6 @@ interface Selector
     /**
      * Response when theme activation succeed.
      *
-     * @param  string  $type
      * @param  string  $id
      *
      * @return mixed

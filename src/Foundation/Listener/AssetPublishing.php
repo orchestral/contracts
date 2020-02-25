@@ -7,8 +7,6 @@ interface AssetPublishing
     /**
      * Response to publishing asset failed.
      *
-     * @param  array $errors
-     *
      * @return mixed
      */
     public function publishingHasFailed(array $errors);

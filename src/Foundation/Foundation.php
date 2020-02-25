@@ -18,29 +18,23 @@ interface Foundation extends RouteManager
 
     /**
      * Get installation status.
-     *
-     * @return bool
      */
     public function installed(): bool;
 
     /**
      * Get acl services.
-     *
-     * @var \Orchestra\Contracts\Auth\Authorization|null
      */
     public function acl(): ?Authorization;
 
     /**
      * Get memory services.
-     *
-     * @var \Orchestra\Contracts\Memory\Provider|null
      */
     public function memory(): ?MemoryProvider;
 
     /**
      * Get menu services.
      *
-     * @var \Orchestra\Widget\Handlers\Menu
+     * @return \Orchestra\Widget\Handlers\Menu
      */
     public function menu();
 
@@ -49,9 +43,6 @@ interface Foundation extends RouteManager
      *
      * @param  string|null  $namespace
      * @param  array|\Closure  $attributes
-     * @param  \Closure|null  $callback
-     *
-     * @return void
      */
     public function namespaced($namespace, $attributes = [], Closure $callback = null): void;
 }

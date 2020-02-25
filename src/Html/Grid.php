@@ -28,9 +28,6 @@ interface Grid
      *      $fieldset->layout('path.to.view');
      * </code>
      *
-     * @param  string  $name
-     * @param  array  $data
-     *
      * @return $this
      */
     public function layout(string $name, array $data = []);
@@ -38,7 +35,6 @@ interface Grid
     /**
      * Allow column overwriting.
      *
-     * @param  string  $name
      * @param  mixed|null  $callback
      *
      * @throws \InvalidArgumentException
@@ -50,17 +46,12 @@ interface Grid
 
     /**
      * Forget meta value.
-     *
-     * @param  string  $key
-     *
-     * @return void
      */
     public function forget(string $key): void;
 
     /**
      * Get meta value.
      *
-     * @param  string  $key
      * @param  mixed|null  $default
      *
      * @return mixed
@@ -70,7 +61,6 @@ interface Grid
     /**
      * Set meta value.
      *
-     * @param  string  $key
      * @param  mixed  $value
      *
      * @return array

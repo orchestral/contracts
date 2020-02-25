@@ -10,9 +10,6 @@ interface Migrator
     /**
      * Update/migrate an extension.
      *
-     * @param  \Orchestra\Contracts\Extension\Listener\Migrator  $listener
-     * @param  \Illuminate\Support\Fluent  $extension
-     *
      * @return mixed
      */
     public function migrate(Listener $listener, Fluent $extension);

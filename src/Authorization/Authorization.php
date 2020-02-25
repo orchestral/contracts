@@ -9,7 +9,6 @@ interface Authorization
      *
      * @param  string|array  $roles
      * @param  string|array  $actions
-     * @param  bool  $allow
      *
      * @return $this
      */
@@ -19,11 +18,7 @@ interface Authorization
      * Verify whether current user has sufficient roles to access the
      * actions based on available type of access.
      *
-     * @param  string  $action
-     *
      * @throws \InvalidArgumentException
-     *
-     * @return bool
      */
     public function can(string $action): bool;
 
@@ -31,9 +26,7 @@ interface Authorization
      * Verify whether current user has sufficient roles to access the
      * actions based on available type of access if the action exist.
      *
-     * @param  string  $action     A string of action name
-     *
-     * @return bool
+     * @param  string  $action
      */
     public function canIf(string $action): bool;
 
@@ -42,11 +35,9 @@ interface Authorization
      * actions based on available type of access.
      *
      * @param  \Orchestra\Contracts\Authorization\Authorizable  $user
-     * @param  string  $action     A string of action name
+     * @param  string  $action
      *
      * @throws \InvalidArgumentException
-     *
-     * @return bool
      */
     public function canAs(Authorizable $user, string $action): bool;
 
@@ -54,10 +45,7 @@ interface Authorization
      * Verify whether current user has sufficient roles to access the
      * actions based on available type of access if the action exist.
      *
-     * @param  \Orchestra\Contracts\Authorization\Authorizable  $user
-     * @param  string  $action     A string of action name
-     *
-     * @return bool
+     * @param  string  $action
      */
     public function canIfAs(Authorizable $user, string $action): bool;
 
@@ -66,11 +54,8 @@ interface Authorization
      * actions based on available type of access.
      *
      * @param  string|array  $roles
-     * @param  string  $action
      *
      * @throws \InvalidArgumentException
-     *
-     * @return bool
      */
     public function check($roles, string $action): bool;
 

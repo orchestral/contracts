@@ -6,29 +6,21 @@ interface Specification
 {
     /**
      * Get specification id.
-     *
-     * @return string
      */
     public function uid(): string;
 
     /**
      * Get specification title.
-     *
-     * @return string
      */
     public function title(): string;
 
     /**
      * Get specification description.
-     *
-     * @return string
      */
     public function description(): string;
 
     /**
      * Check specification requirement.
-     *
-     * @return bool
      */
     public function check(): bool;
 
@@ -41,8 +33,6 @@ interface Specification
 
     /**
      * Is specification optional.
-     *
-     * @return bool
      */
     public function optional(): bool;
 }

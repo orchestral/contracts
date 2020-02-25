@@ -9,8 +9,6 @@ interface DeauthenticateUser
     /**
      * Logout a user.
      *
-     * @param  \Orchestra\Contracts\Auth\Listener\DeauthenticateUser  $listener
-     *
      * @return mixed
      */
     public function logout(Listener $listener);

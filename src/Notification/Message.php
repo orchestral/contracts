@@ -6,15 +6,11 @@ interface Message
 {
     /**
      * Get data.
-     *
-     * @return array
      */
     public function getData(): array;
 
     /**
      * Get subject.
-     *
-     * @return string
      */
     public function getSubject(): string;
 

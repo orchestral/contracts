@@ -9,8 +9,6 @@ interface Configure extends Extension
     /**
      * Response for extension configuration.
      *
-     * @param  array  $data
-     *
      * @return mixed
      */
     public function showConfigurationChanger(array $data);
@@ -27,8 +25,6 @@ interface Configure extends Extension
 
     /**
      * Response to extension configuration has succeed.
-     *
-     * @param  \Illuminate\Support\Fluent  $extension
      *
      * @return mixed
      */
