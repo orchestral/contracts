@@ -27,8 +27,6 @@ interface Control
      * Build field by type.
      *
      * @param  mixed  $row
-     *
-     * @return \Orchestra\Contracts\Html\Form\Field
      */
     public function buildFieldByType(string $type, $row, Fluent $control): Field;
 
@@ -36,8 +34,6 @@ interface Control
      * Build data.
      *
      * @param  mixed  $row
-     *
-     * @return \Orchestra\Contracts\Html\Form\Field
      */
     public function buildFluentData(string $type, $row, Fluent $control): Field;
 
