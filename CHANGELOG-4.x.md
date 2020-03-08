@@ -28,5 +28,5 @@ Released: 2019-09-05
 
 ### Changes
 
-* Update support for Laravel Framework v6.0.
+* Update support for Laravel Framework v6.
 * Update `Orchestra\Contracts\Messages\MessageBag` interface.
