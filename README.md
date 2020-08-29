@@ -22,6 +22,7 @@ Laravel    | Contracts
  5.8.x     | 3.8.x
  6.x       | 4.x
  7.x       | 5.x
+ 8.x.      | 6.x
 
 ## Installation
 
