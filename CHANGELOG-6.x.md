@@ -4,7 +4,7 @@ This changelog references the relevant changes (bug and security fixes) done to 
 
 ## 6.0.0
 
-Released: 2021-04-18
+Released: 2020-08-29
 
 ### Changes
 
