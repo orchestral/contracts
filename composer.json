@@ -16,8 +16,8 @@
         }
     },
     "require": {
-        "php": ">=7.3",
-        "illuminate/contracts": "dev-master"
+        "php": "^8.0",
+        "illuminate/contracts": "^9.0"
     },
     "extra": {
         "branch-alias": {
